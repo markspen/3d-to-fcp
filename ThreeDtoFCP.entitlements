@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- MAS sandbox required -->
+    <key>com.apple.security.app-sandbox</key>
+    <true/>
+
+    <!-- User-initiated file access (drag-drop + NSOpenPanel) -->
+    <key>com.apple.security.files.user-selected.read-only</key>
+    <true/>
+
+    <!-- Security-scoped bookmark for ~/Movies/Motion Templates (persisted across launches) -->
+    <key>com.apple.security.files.bookmarks.app-scope</key>
+    <true/>
+
+    <!-- Write access to Movies folder for Motion Templates output -->
+    <key>com.apple.security.assets.movies.read-write</key>
+    <true/>
+</dict>
+</plist>

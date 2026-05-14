@@ -1,0 +1,16 @@
+# macOS Finder
+.DS_Store
+
+# Xcode user-specific state
+xcuserdata/
+*.xcuserstate
+
+# Claude local settings (per-user)
+.claude/settings.local.json
+
+# Local safety backups (kept on disk, not in version control)
+Backup_pre_loop_experiment/
+_Placeholder_old.moti.bak
+
+# Large USDZ assets used only for Motion-side template editing
+_Placeholder_new/Media/*.usdz

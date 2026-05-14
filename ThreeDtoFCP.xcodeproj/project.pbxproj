@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E13BF8EA0A24DB382824DE0 /* ProcessingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C1E5CFC7705F0F6FBCA3B /* ProcessingResult.swift */; };
+		2D6A35B44A19F178A4A7D47E /* _Placeholder.moti in Resources */ = {isa = PBXBuildFile; fileRef = 73C9D5B636B528730AB127B1 /* _Placeholder.moti */; };
+		4742B4C8C9B77E8F9FC84D16 /* MotionTemplatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFDA1F804968035983FD7C3 /* MotionTemplatesManager.swift */; };
+		4E8F3FEF0E7EAE1D72699690 /* Ripple_logo_T.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A886D439C0C9A87FCB6CEF /* Ripple_logo_T.png */; };
+		4F6C152C2DE89E1820B5F5C3 /* TemplateBuilderPatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A800F851D97C26C77696EA0 /* TemplateBuilderPatchTests.swift */; };
+		50BCB2FD9C1FF69DB350862A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 530966111408FEA148E401E1 /* PrivacyInfo.xcprivacy */; };
+		77F717C4A697691D4C7669F6 /* USDZValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2F9D32AF3D151ED27A0DE /* USDZValidator.swift */; };
+		796E1F143501DF161DEE6CCB /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592BDE425F0F8879A64D2956 /* AppViewModel.swift */; };
+		86B0E5D56A908F4AF698A52B /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43FA5493CDB23E48C7E94A3 /* HelpView.swift */; };
+		A41296FDFC2475B40C9B7870 /* QuickLookThumbnailing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95F118D358A65E17BFDCE7E /* QuickLookThumbnailing.framework */; };
+		A80F8F6B76BE28086BE90914 /* ThreeDtoFCPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8A7E5EE20BED02661BAB4 /* ThreeDtoFCPApp.swift */; };
+		AF69DAEC1A4564867847F008 /* USDZFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197406E9C3F0FE583DC8307C /* USDZFile.swift */; };
+		B57636D15BB42D47121217C8 /* DropZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3869B74A69659ACDAB415 /* DropZoneView.swift */; };
+		B61EF7B13DFA189B2912F814 /* ConflictSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E24B3363FF0CA9CC39FD7BA /* ConflictSheet.swift */; };
+		BF4D2B36D3339E85884BA7B9 /* TemplateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AE26C6819098B7C75B92B /* TemplateBuilder.swift */; };
+		BFD8E94792F3C7F3F69D52A5 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA937777894C520CD6A4B53 /* SuccessView.swift */; };
+		EAEAC7FE62BB752A775D8B95 /* ThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A68FB079217C9C2EF19C9D4 /* ThumbnailGenerator.swift */; };
+		FADDD64FB41C95329C63A563 /* FileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5840946B08CF1448684A24D /* FileListView.swift */; };
+		FB8CB7C13EB04630B647E5ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511664DB7EEC2486F87AADC8 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6249B04608B5DEABE66183D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3129AFEF3FE366E3A24B8D0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED56D6BCCD071AAAFED508A2;
+			remoteInfo = ThreeDtoFCP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		197406E9C3F0FE583DC8307C /* USDZFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDZFile.swift; sourceTree = "<group>"; };
+		1A800F851D97C26C77696EA0 /* TemplateBuilderPatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateBuilderPatchTests.swift; sourceTree = "<group>"; };
+		3AD2F9D32AF3D151ED27A0DE /* USDZValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDZValidator.swift; sourceTree = "<group>"; };
+		511664DB7EEC2486F87AADC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		530966111408FEA148E401E1 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		592BDE425F0F8879A64D2956 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		683C1E5CFC7705F0F6FBCA3B /* ProcessingResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingResult.swift; sourceTree = "<group>"; };
+		6DA937777894C520CD6A4B53 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		73C9D5B636B528730AB127B1 /* _Placeholder.moti */ = {isa = PBXFileReference; path = _Placeholder.moti; sourceTree = "<group>"; };
+		8210C2AFD5FD82DAAB2B34FC /* ThreeDtoFCP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeDtoFCP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A68FB079217C9C2EF19C9D4 /* ThumbnailGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailGenerator.swift; sourceTree = "<group>"; };
+		8E24B3363FF0CA9CC39FD7BA /* ConflictSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConflictSheet.swift; sourceTree = "<group>"; };
+		8FF8A7E5EE20BED02661BAB4 /* ThreeDtoFCPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDtoFCPApp.swift; sourceTree = "<group>"; };
+		A1C4DF12A6E447036E45FEEC /* ThreeDtoFCPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreeDtoFCPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5840946B08CF1448684A24D /* FileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListView.swift; sourceTree = "<group>"; };
+		AD8AE26C6819098B7C75B92B /* TemplateBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateBuilder.swift; sourceTree = "<group>"; };
+		B43FA5493CDB23E48C7E94A3 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		BDE3869B74A69659ACDAB415 /* DropZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropZoneView.swift; sourceTree = "<group>"; };
+		BEFDA1F804968035983FD7C3 /* MotionTemplatesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionTemplatesManager.swift; sourceTree = "<group>"; };
+		E95F118D358A65E17BFDCE7E /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
+		F5A886D439C0C9A87FCB6CEF /* Ripple_logo_T.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ripple_logo_T.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B484EA7FFA9A99ABC8A10C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41296FDFC2475B40C9B7870 /* QuickLookThumbnailing.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03A7B821E2695EF08808D394 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E24B3363FF0CA9CC39FD7BA /* ConflictSheet.swift */,
+				BDE3869B74A69659ACDAB415 /* DropZoneView.swift */,
+				A5840946B08CF1448684A24D /* FileListView.swift */,
+				B43FA5493CDB23E48C7E94A3 /* HelpView.swift */,
+				6DA937777894C520CD6A4B53 /* SuccessView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B425EC861A5E63B40E1C94B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				592BDE425F0F8879A64D2956 /* AppViewModel.swift */,
+				511664DB7EEC2486F87AADC8 /* ContentView.swift */,
+				8FF8A7E5EE20BED02661BAB4 /* ThreeDtoFCPApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2A61CF1558487BF6DA697FAE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				683C1E5CFC7705F0F6FBCA3B /* ProcessingResult.swift */,
+				197406E9C3F0FE583DC8307C /* USDZFile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49C7BFBFF9C07D48ACCF831E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1A800F851D97C26C77696EA0 /* TemplateBuilderPatchTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6B66A606EFCBAC8072540426 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E95F118D358A65E17BFDCE7E /* QuickLookThumbnailing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CCCE94C7295F6BD19EF6A74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8210C2AFD5FD82DAAB2B34FC /* ThreeDtoFCP.app */,
+				A1C4DF12A6E447036E45FEEC /* ThreeDtoFCPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1CCDB16C187319F7461AE55 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1B425EC861A5E63B40E1C94B /* App */,
+				F3781B036C330037F1E6190E /* Engine */,
+				2A61CF1558487BF6DA697FAE /* Models */,
+				03A7B821E2695EF08808D394 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C5137FD18C01AF2EEA2BBDB0 = {
+			isa = PBXGroup;
+			children = (
+				73C9D5B636B528730AB127B1 /* _Placeholder.moti */,
+				530966111408FEA148E401E1 /* PrivacyInfo.xcprivacy */,
+				F5A886D439C0C9A87FCB6CEF /* Ripple_logo_T.png */,
+				A1CCDB16C187319F7461AE55 /* Sources */,
+				49C7BFBFF9C07D48ACCF831E /* Tests */,
+				6B66A606EFCBAC8072540426 /* Frameworks */,
+				9CCCE94C7295F6BD19EF6A74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3781B036C330037F1E6190E /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				BEFDA1F804968035983FD7C3 /* MotionTemplatesManager.swift */,
+				AD8AE26C6819098B7C75B92B /* TemplateBuilder.swift */,
+				8A68FB079217C9C2EF19C9D4 /* ThumbnailGenerator.swift */,
+				3AD2F9D32AF3D151ED27A0DE /* USDZValidator.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		637511B4C6218D02D4779687 /* ThreeDtoFCPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 054D5B67BC025034601118AF /* Build configuration list for PBXNativeTarget "ThreeDtoFCPTests" */;
+			buildPhases = (
+				2909612E39D2F08C832D501F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C88BCEDEAE148BAFC6BA8FE /* PBXTargetDependency */,
+			);
+			name = ThreeDtoFCPTests;
+			packageProductDependencies = (
+			);
+			productName = ThreeDtoFCPTests;
+			productReference = A1C4DF12A6E447036E45FEEC /* ThreeDtoFCPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED56D6BCCD071AAAFED508A2 /* ThreeDtoFCP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7EB832812A2D000392726AD /* Build configuration list for PBXNativeTarget "ThreeDtoFCP" */;
+			buildPhases = (
+				E76B95600F57A89A51C46292 /* Sources */,
+				7625B5BB3131F38899D91670 /* Resources */,
+				B484EA7FFA9A99ABC8A10C75 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThreeDtoFCP;
+			packageProductDependencies = (
+			);
+			productName = ThreeDtoFCP;
+			productReference = 8210C2AFD5FD82DAAB2B34FC /* ThreeDtoFCP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3129AFEF3FE366E3A24B8D0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					637511B4C6218D02D4779687 = {
+						DevelopmentTeam = 56S86LMNZ6;
+						ProvisioningStyle = Automatic;
+					};
+					ED56D6BCCD071AAAFED508A2 = {
+						DevelopmentTeam = 56S86LMNZ6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2219FBD409D063ABCA6EBC9B /* Build configuration list for PBXProject "ThreeDtoFCP" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C5137FD18C01AF2EEA2BBDB0;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9CCCE94C7295F6BD19EF6A74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED56D6BCCD071AAAFED508A2 /* ThreeDtoFCP */,
+				637511B4C6218D02D4779687 /* ThreeDtoFCPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7625B5BB3131F38899D91670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50BCB2FD9C1FF69DB350862A /* PrivacyInfo.xcprivacy in Resources */,
+				4E8F3FEF0E7EAE1D72699690 /* Ripple_logo_T.png in Resources */,
+				2D6A35B44A19F178A4A7D47E /* _Placeholder.moti in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2909612E39D2F08C832D501F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F6C152C2DE89E1820B5F5C3 /* TemplateBuilderPatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E76B95600F57A89A51C46292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796E1F143501DF161DEE6CCB /* AppViewModel.swift in Sources */,
+				B61EF7B13DFA189B2912F814 /* ConflictSheet.swift in Sources */,
+				FB8CB7C13EB04630B647E5ED /* ContentView.swift in Sources */,
+				B57636D15BB42D47121217C8 /* DropZoneView.swift in Sources */,
+				FADDD64FB41C95329C63A563 /* FileListView.swift in Sources */,
+				86B0E5D56A908F4AF698A52B /* HelpView.swift in Sources */,
+				4742B4C8C9B77E8F9FC84D16 /* MotionTemplatesManager.swift in Sources */,
+				1E13BF8EA0A24DB382824DE0 /* ProcessingResult.swift in Sources */,
+				BFD8E94792F3C7F3F69D52A5 /* SuccessView.swift in Sources */,
+				BF4D2B36D3339E85884BA7B9 /* TemplateBuilder.swift in Sources */,
+				A80F8F6B76BE28086BE90914 /* ThreeDtoFCPApp.swift in Sources */,
+				EAEAC7FE62BB752A775D8B95 /* ThumbnailGenerator.swift in Sources */,
+				AF69DAEC1A4564867847F008 /* USDZFile.swift in Sources */,
+				77F717C4A697691D4C7669F6 /* USDZValidator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C88BCEDEAE148BAFC6BA8FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED56D6BCCD071AAAFED508A2 /* ThreeDtoFCP */;
+			targetProxy = 6249B04608B5DEABE66183D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18B5189A5BB1D91A9DE26BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 56S86LMNZ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markspencer.ThreeDtoFCPTests;
+				PRODUCT_NAME = ThreeDtoFCPTests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.10;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/3D to FCP.app/Contents/MacOS/3D to FCP";
+			};
+			name = Debug;
+		};
+		2B86942A70ED045260554BAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ThreeDtoFCP.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56S86LMNZ6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = ThreeDtoFCP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markspencer.ThreeDtoFCP;
+				PRODUCT_MODULE_NAME = ThreeDtoFCP;
+				PRODUCT_NAME = "3D to FCP";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.10;
+			};
+			name = Debug;
+		};
+		502E2626EA46B338BD746F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ThreeDtoFCP.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56S86LMNZ6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = NO;
+				INFOPLIST_FILE = ThreeDtoFCP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markspencer.ThreeDtoFCP;
+				PRODUCT_MODULE_NAME = ThreeDtoFCP;
+				PRODUCT_NAME = "3D to FCP";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.10;
+			};
+			name = Release;
+		};
+		5A5B351CF73C5938B4B3471E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9BFE48415BA71FF32A7847B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 56S86LMNZ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markspencer.ThreeDtoFCPTests;
+				PRODUCT_NAME = ThreeDtoFCPTests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.10;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/3D to FCP.app/Contents/MacOS/3D to FCP";
+			};
+			name = Release;
+		};
+		F7CE77683984B963A213D670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		054D5B67BC025034601118AF /* Build configuration list for PBXNativeTarget "ThreeDtoFCPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B5189A5BB1D91A9DE26BD0 /* Debug */,
+				9BFE48415BA71FF32A7847B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2219FBD409D063ABCA6EBC9B /* Build configuration list for PBXProject "ThreeDtoFCP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7CE77683984B963A213D670 /* Debug */,
+				5A5B351CF73C5938B4B3471E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B7EB832812A2D000392726AD /* Build configuration list for PBXNativeTarget "ThreeDtoFCP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B86942A70ED045260554BAE /* Debug */,
+				502E2626EA46B338BD746F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3129AFEF3FE366E3A24B8D0C /* Project object */;
+}
