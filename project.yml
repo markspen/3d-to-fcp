@@ -16,6 +16,7 @@ targets:
     sources:
       - path: Sources
         type: group
+      - path: Assets.xcassets
       - path: _Placeholder.moti
         buildPhase: resources
         type: file
