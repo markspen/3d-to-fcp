@@ -58,10 +58,8 @@ WHAT WE DO NOT NEED YOU TO TEST
 ### Feedback Email
 
 ```
-support@rippletraining.com
+markspencer@mac.com
 ```
-
-> Confirm with Mark — this is the placeholder from the privacy policy draft. If Mark prefers a personal email or a different inbox, swap it here.
 
 ### Marketing URL (optional)
 
@@ -72,10 +70,10 @@ https://rippletraining.com
 ### Privacy Policy URL (required for external testers)
 
 ```
-https://rippletraining.com/3dtofcp-privacy
+https://markspen.github.io/3d-to-fcp/privacy.html
 ```
 
-> Placeholder — actual URL depends on where you host `tasks/privacy-policy.html`.
+> Hosted via GitHub Pages on `markspen/3d-to-fcp` (public repo, `/docs` folder on `main`).
 
 ---
 
@@ -153,7 +151,7 @@ Before clicking Distribute → Upload in Xcode:
 
 ## Open Questions
 
-- [ ] Confirm feedback email (`support@rippletraining.com` or different)
-- [ ] Confirm privacy policy URL once hosted
+- [x] Confirm feedback email — `markspencer@mac.com`
+- [x] Confirm privacy policy URL — `https://markspen.github.io/3d-to-fcp/privacy.html` (GitHub Pages)
 - [ ] Decide group structure (internal-only first, then expand?)
 - [ ] Decide build cadence — weekly during active beta, or only when something material changes?
