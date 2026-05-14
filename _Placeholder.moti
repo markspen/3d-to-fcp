@@ -230,7 +230,6 @@
 		<version>2</version>
 		<target object="3001924615" channel="./2/100" name="Show Tips"/>
 		<target object="3001924638" channel="./2/100" name="🔶 Object"/>
-		<target object="3001924369" channel="./2/302" name="Unit Size"/>
 		<target object="3001924369" channel="./2/303" name="Custom Unit Size"/>
 		<target object="3001924369" channel="./2/304" name="Orientation"/>
 		<target object="3001924369" channel="./1/100/101" name="Object Position"/>
@@ -252,7 +251,6 @@
 		<target object="3001924467" channel="./1/100/109" name="Camera Rotation"/>
 	</publishSettings>
 	<currentFrame>317440 153600 1 0</currentFrame>
-	<currentObject>10000</currentObject>
 	<activeLayer>10003</activeLayer>
 	<timeRange offset="0 1 1 0" duration="1536000 153600 1 0"/>
 	<playRange offset="0 1 1 0" duration="1536000 153600 1 0"/>
@@ -295,7 +293,7 @@
 		<flags>0</flags>
 		<timing in="0 1 1 0" out="-2560 153600 1 0" offset="0 1 1 0"/>
 		<foldFlags>0</foldFlags>
-		<baseFlags>268435473</baseFlags>
+		<baseFlags>16</baseFlags>
 		<parameter name="Properties" id="1" flags="8589938704">
 			<parameter name="HDR White Level" id="103" flags="8606744592" default="0.75" value="0.75"/>
 		</parameter>
