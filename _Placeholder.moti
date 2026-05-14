@@ -235,7 +235,9 @@
 		<target object="3001924369" channel="./2/304" name="Orientation"/>
 		<target object="3001924369" channel="./1/100/101" name="Object Position"/>
 		<target object="3001924369" channel="./1/100/109" name="Object Rotation"/>
+		<target object="10003" channel="./1/100/109" name="Center Rotation"/>
 		<target object="3001924369" channel="./1/100/105" name="Object Scale"/>
+		<target object="10003" channel="./1/100/105" name="Center Scale"/>
 		<target object="3001924639" channel="./2/100" name="🔶 Animation"/>
 		<target object="3001924465" channel="./200" name="Fade In Time"/>
 		<target object="3001924585" channel="./2/100" name="Scale In"/>
@@ -249,8 +251,8 @@
 		<target object="3001924467" channel="./1/100/101" name="Camera Position"/>
 		<target object="3001924467" channel="./1/100/109" name="Camera Rotation"/>
 	</publishSettings>
-	<currentFrame>686080 153600 1 0</currentFrame>
-	<currentObject>3001924369</currentObject>
+	<currentFrame>317440 153600 1 0</currentFrame>
+	<currentObject>10000</currentObject>
 	<activeLayer>10003</activeLayer>
 	<timeRange offset="0 1 1 0" duration="1536000 153600 1 0"/>
 	<playRange offset="0 1 1 0" duration="1536000 153600 1 0"/>
@@ -293,7 +295,7 @@
 		<flags>0</flags>
 		<timing in="0 1 1 0" out="-2560 153600 1 0" offset="0 1 1 0"/>
 		<foldFlags>0</foldFlags>
-		<baseFlags>16</baseFlags>
+		<baseFlags>268435473</baseFlags>
 		<parameter name="Properties" id="1" flags="8589938704">
 			<parameter name="HDR White Level" id="103" flags="8606744592" default="0.75" value="0.75"/>
 		</parameter>
@@ -560,7 +562,7 @@
 			<flags>0</flags>
 			<timing in="0 1 1 0" out="1533440 153600 1 0" offset="0 1 1 0"/>
 			<foldFlags>0</foldFlags>
-			<baseFlags>268959761</baseFlags>
+			<baseFlags>524304</baseFlags>
 			<parameter name="Properties" id="1" flags="8589938704">
 				<parameter name="Transform" id="100" flags="8589938704">
 					<parameter name="Rotation" id="109" flags="8589938704">
@@ -700,7 +702,7 @@
 		<baseFlags>524304</baseFlags>
 		<parameter name="Properties" id="1" flags="8589938704">
 			<parameter name="Transform" id="100" flags="8589938704">
-				<parameter name="Scale" id="105" flags="8589938704">
+				<parameter name="Scale" id="105" flags="8589938705">
 					<foldFlags>15</foldFlags>
 					<parameter name="X" id="1" flags="8589934608" default="1" value="1"/>
 					<parameter name="Y" id="2" flags="8589934608" default="1" value="1"/>
