@@ -170,7 +170,7 @@
 	<displayEffects>1</displayEffects>
 	<videoVerticalZoom>2</videoVerticalZoom>
 	<audioVerticalZoom>2</audioVerticalZoom>
-	<displayRange in="-441354064 1729492187 3 0" out="10255192864 1000000000 3 0"/>
+	<displayRange in="-531900583 2082988879 3 0" out="10255354500 1000000000 3 0"/>
 </timeline>
 
 <curveeditor>
@@ -178,8 +178,8 @@
 	<snapping>0</snapping>
 	<displayAudioWaveform>0</displayAudioWaveform>
 	<lockKeyframesInTime>0</lockKeyframesInTime>
-	<displayRange in="-441354064 1729492187 3 0" out="10255192864 1000000000 3 0"/>
-	<currentviewvolume originx="-0.25519286373046796" originy="-62.5" width="10.510385727999999" height="125"/>
+	<displayRange in="-531900583 2082988879 3 0" out="10255354500 1000000000 3 0"/>
+	<currentviewvolume originx="-0.25535449966269358" originy="-62.5" width="10.510709" height="125"/>
 	<snapshotChannels>0</snapshotChannels>
 </curveeditor>
 
@@ -250,6 +250,7 @@
 		<target object="3001924444" channel="./200" name="Ongoing Rotate Z"/>
 		<target object="3001924467" channel="./1/100/101" name="Camera Position"/>
 		<target object="3001924467" channel="./1/100/109" name="Camera Rotation"/>
+		<target object="3001924369" channel="./1/311" name="End Condition"/>
 	</publishSettings>
 	<currentFrame>317440 153600 1 0</currentFrame>
 	<currentObject>10000</currentObject>
@@ -625,8 +626,7 @@
 				<parameter name="Duration Cache" id="317" flags="8589934610" default="0" value="148"/>
 			</parameter>
 			<parameter name="Object" id="2" flags="8589938704">
-				<parameter name="Unit Size" id="302" flags="8606777344" default="0" value="2"/>
-				<parameter name="Custom Unit Size" id="303" flags="12901679104" default="6.2683391487617603" value="35"/>
+				<parameter name="Custom Unit Size" id="303" flags="12901711872" default="6.2683391487617603" value="18.702622737745425"/>
 			</parameter>
 			<behavior name="Rate Rot X" id="3001924406" factoryID="7">
 				<channelBehavior affectingFactory="ec6a810f5a4c4fd0b298969462464ecd" affectingChannel="./1/100/109/1" sliderRange="3.4028234663852886e+38"/>
