@@ -46,6 +46,7 @@ targets:
         LSMinimumSystemVersion: "14.0"
         NSHumanReadableCopyright: "© 2026 Mark Spencer"
         CFBundleIconName: AppIcon
+        LSApplicationCategoryType: public.app-category.video
         NSPrincipalClass: NSApplication
         NSSupportsAutomaticTermination: false
         NSSupportsSuddenTermination: false
@@ -73,12 +74,10 @@ targets:
         COMBINE_HIDPI_IMAGES: YES
       configs:
         Debug:
-          CODE_SIGN_IDENTITY: "Apple Development"
           SWIFT_OPTIMIZATION_LEVEL: "-Onone"
           SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
           ENABLE_TESTABILITY: YES
         Release:
-          CODE_SIGN_IDENTITY: "Apple Distribution"
           SWIFT_OPTIMIZATION_LEVEL: "-O"
           ENABLE_TESTABILITY: NO
 
