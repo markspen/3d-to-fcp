@@ -105,15 +105,9 @@ Initial release. Drop USDZ files. Get Final Cut Pro titles. That's the whole app
 
 ## Support URL (required)
 
-**TBD — Mark to decide:**
+**DECIDED:** `https://github.com/markspen/3d-to-fcp/issues`
 
-Options:
-1. `https://rippletraining.com/contact` _(if Ripple Training will field support)_
-2. `https://markspencer.com/support` _(personal site if exists)_
-3. A dedicated landing page on Day Street Productions site
-4. A GitHub Issues page _(free, technical-feeling)_
-
-> Apple requires a working URL where users can reach the developer. It does NOT have to be elaborate — even a one-page contact form is fine.
+Users file bugs and feature requests directly on the public repo's Issues page.
 
 ---
 
@@ -204,8 +198,8 @@ Test account: not required (no login).
 
 ## Open Questions for Mark
 
-- [ ] Support URL — which option?
-- [ ] Privacy policy URL — host on rippletraining.com or elsewhere?
+- [x] Support URL — `https://github.com/markspen/3d-to-fcp/issues`
+- [x] Privacy policy URL — hosted: `https://markspen.github.io/3d-to-fcp/privacy.html`
 - [ ] Subtitle preference (#1, #2, #3, or different)?
 - [ ] Pricing: confirmed free?
 - [ ] Anything to change in the description copy?
