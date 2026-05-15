@@ -59,3 +59,19 @@ Each USDZ becomes a draggable title in FCP's Titles Browser under the "3D to FCP
 1. `.moti` bundle structure unknown — must verify before coding the engine
 2. FCP title category naming — confirm "3D to FCP" shows correctly in Titles Browser without Motion open
 3. USDZ validation: `usdchecker` (Apple CLI from USD tools) may not be present on user machines — need fallback
+
+## Submission Status (as of 2026-05-15)
+- **App is feature-complete v1.** 12 tests green, build clean. GitHub `markspen/3d-to-fcp` (public, `main`).
+- **Bundle ID:** `com.markspencer.ThreeDtoFCP`. SKU `3DTOFCP-001`.
+- **TestFlight:** Build 1.0(1) submitted for Beta App Review on 2026-05-14, status "Waiting for Review" (~24h elapsed as of 2026-05-15). Mark smoke-tested the TestFlight build — all good. Iain Anderson (funwithstuff@icloud.com) added as external tester but can't test yet — external testers are gated on Beta App Review approval.
+- **App Store listing:** fully filled in (description, keywords, screenshots ×5, age rating, privacy declarations, content rights, contact info). Build deliberately NOT attached — plan is to ship a fresh 1.0(2) after TestFlight testing wraps.
+- **Support URL:** `https://github.com/markspen/3d-to-fcp/issues`
+- **Privacy Policy URL:** `https://markspen.github.io/3d-to-fcp/privacy.html` (GitHub Pages, declared no data collected)
+- **App Store category:** Graphics & Design (primary), Video (secondary). `LSApplicationCategoryType` in Info.plist = `public.app-category.video`.
+- **Next steps:** (1) wait for Beta App Review to clear → Iain's invite auto-sends; (2) once external testing wraps clean, archive build 1.0(2); (3) attach 1.0(2) to the App Store submission and submit for review.
+
+## Submission Gotchas (learned during submission)
+- Automatic signing + a hardcoded `CODE_SIGN_IDENTITY` in project.yml = archive failure (conflicting provisioning). Remove the per-config identity lines; let automatic signing pick.
+- Missing `LSApplicationCategoryType` = App Store validation failure. Must be declared in the infoPlist block.
+- `ITSAppUsesNonExemptEncryption: false` in Info.plist avoids the per-build encryption-compliance prompt.
+- "No Builds Available" for an external tester does NOT mean the build failed — it means Beta App Review hasn't approved external distribution yet.
