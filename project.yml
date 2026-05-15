@@ -47,6 +47,7 @@ targets:
         NSHumanReadableCopyright: "© 2026 Mark Spencer"
         CFBundleIconName: AppIcon
         LSApplicationCategoryType: public.app-category.video
+        ITSAppUsesNonExemptEncryption: false
         NSPrincipalClass: NSApplication
         NSSupportsAutomaticTermination: false
         NSSupportsSuddenTermination: false
