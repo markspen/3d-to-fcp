@@ -72,6 +72,13 @@ Each USDZ becomes a draggable title in FCP's Titles Browser under the "3D to FCP
 - **App Store category:** Graphics & Design (primary), Video (secondary). `LSApplicationCategoryType` in Info.plist = `public.app-category.video`.
 - **Next steps:** (1) wait for address verification to clear → Beta App Review should unblock → Iain's invite auto-sends; (2) once external testing wraps clean, archive build 1.0(2); (3) attach 1.0(2) to the App Store submission and submit for review.
 
+## USDZ Conversion Toolchain
+- **CLI script:** `~/scripts/usdz-convert` — converts OBJ, GLTF, GLB to USDZ from the terminal. Supports single file, named output, and batch (`*.glb`). Output written alongside input file by default.
+- **Droplet:** `~/Desktop/USDZ Converter.app` — drag-and-drop any OBJ/GLTF/GLB onto it; USDZ appears in the same folder. Shows a macOS notification on success.
+- **Claude skill:** `/usdz-convert` — invoke from within Claude to convert files.
+- **How it works:** All three use Apple's `usdzconvert` Python 2.7 script bundled inside Reality Converter.app at `/Applications/Reality Converter.app/Contents/XPCServices/RealityConverterService.xpc/Contents/Resources/usdpython/usdzconvert/`. Requires Reality Converter to be installed. The bundled Python 2.7 binary must be used (system `/usr/bin/python` was removed in modern macOS).
+- **Sample files for App Review:** 9 Apple sample USDZ files committed to `sample-files/` in the GitHub repo (`markspen/3d-to-fcp`). Provided to App Reviewers in response to Guideline 2.1(a) rejection on 2026-05-20.
+
 ## Submission Gotchas (learned during submission)
 - Automatic signing + a hardcoded `CODE_SIGN_IDENTITY` in project.yml = archive failure (conflicting provisioning). Remove the per-config identity lines; let automatic signing pick.
 - Missing `LSApplicationCategoryType` = App Store validation failure. Must be declared in the infoPlist block.
