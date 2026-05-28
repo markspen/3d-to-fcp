@@ -60,17 +60,21 @@ Each USDZ becomes a draggable title in FCP's Titles Browser under the "3D to FCP
 2. FCP title category naming — confirm "3D to FCP" shows correctly in Titles Browser without Motion open
 3. USDZ validation: `usdchecker` (Apple CLI from USD tools) may not be present on user machines — need fallback
 
-## Submission Status (as of 2026-05-19)
+## Submission Status (as of 2026-05-28)
 - **App is feature-complete v1.** 12 tests green, build clean. GitHub `markspen/3d-to-fcp` (public, `main`).
 - **Bundle ID:** `com.markspencer.ThreeDtoFCP`. SKU `3DTOFCP-001`.
-- **TestFlight:** Build 1.0(1) submitted for Beta App Review on 2026-05-14, still "Waiting for Review" as of 2026-05-19 (5 days). Delay is NOT a red flag — see below. Mark smoke-tested the TestFlight build — all good. Iain Anderson (funwithstuff@icloud.com) added as external tester but can't test yet — external testers are gated on Beta App Review approval.
-- **Developer account address verification:** Apple required proof of new address. Upload access was blocked until 2026-05-19 morning; driver's license uploaded that morning. Address verification likely contributing to Beta App Review hold. Expected turnaround: 1–3 business days once docs submitted. Beta App Review should unblock automatically once account issue clears — no need to resubmit the build.
-- **App Store review delays (systemic, May 2026):** Apple Developer Forums show widespread reports of 5–40+ day "Waiting for Review" waits and 15–80 day "In Review" waits across many developers. Expedited review requests reportedly being ignored. This is a systemic backlog, not specific to this app.
-- **App Store listing:** fully filled in (description, keywords, screenshots ×5, age rating, privacy declarations, content rights, contact info). Build deliberately NOT attached — plan is to ship a fresh 1.0(2) after TestFlight testing wraps.
+- **Build history:**
+  - 1.0(1) — rejected. Guideline 2.1(a): no sample files provided. Guideline 4: no way to reopen window after close. Both fixed in 1.0(2).
+  - 1.0(2) — current build. Uploaded 2026-05-28. Fixes: (1) quit app on window close via `AppDelegate.applicationShouldTerminateAfterLastWindowClosed`; (2) added `LSApplicationCategoryType` and `ITSAppUsesNonExemptEncryption` to Info.plist. Mark smoke-tested — quit-on-close confirmed working.
+- **TestFlight internal:** Build 1.0(2) status "Testing" in internal group. Mark verified on device.
+- **TestFlight external:** Build 1.0(2) submitted for Beta App Review on 2026-05-28, status "Waiting for Review". Iain Anderson (funwithstuff@icloud.com) added to external group — invite will auto-send once Beta App Review clears.
+- **Sample files for App Review:** 9 Apple sample USDZ files in `sample-files/` folder of GitHub repo. Provided in response to Guideline 2.1(a) rejection.
+- **App Store review delays (systemic, May 2026):** Apple Developer Forums show widespread reports of 5–40+ day waits. Normal to wait.
+- **App Store listing:** fully filled in. Build deliberately NOT attached — will attach 1.0(2) after external testing wraps clean.
 - **Support URL:** `https://github.com/markspen/3d-to-fcp/issues`
-- **Privacy Policy URL:** `https://markspen.github.io/3d-to-fcp/privacy.html` (GitHub Pages, declared no data collected)
-- **App Store category:** Graphics & Design (primary), Video (secondary). `LSApplicationCategoryType` in Info.plist = `public.app-category.video`.
-- **Next steps:** (1) wait for address verification to clear → Beta App Review should unblock → Iain's invite auto-sends; (2) once external testing wraps clean, archive build 1.0(2); (3) attach 1.0(2) to the App Store submission and submit for review.
+- **Privacy Policy URL:** `https://markspen.github.io/3d-to-fcp/privacy.html`
+- **App Store category:** Graphics & Design (primary), Video (secondary). `LSApplicationCategoryType` = `public.app-category.video`.
+- **Next steps:** (1) wait for Beta App Review → Iain tests; (2) once external testing clean, attach 1.0(2) to App Store submission and submit for full review.
 
 ## USDZ Conversion Toolchain
 - **CLI script:** `~/scripts/usdz-convert` — converts OBJ, GLTF, GLB to USDZ from the terminal. Supports single file, named output, and batch (`*.glb`). Output written alongside input file by default.
