@@ -4,97 +4,91 @@
 
 <displayversion>6.2</displayversion>
 
-<factory id="1" uuid="27f3ee8b229211d7925a00039389b702">
-	<description>Channel</description>
-	<manufacturer>Apple</manufacturer>
-	<version>1</version>
-</factory>
-
-<factory id="2" uuid="402246385249454b90e08b2ee1b6bf06">
+<factory id="1" uuid="402246385249454b90e08b2ee1b6bf06">
 	<description>Rig</description>
 	<manufacturer>Apple</manufacturer>
 	<version>1</version>
 </factory>
 
-<factory id="3" uuid="46c844a813d311d8a438000a95af9f7e">
+<factory id="2" uuid="46c844a813d311d8a438000a95af9f7e">
 	<description>Channel</description>
 	<manufacturer>Apple</manufacturer>
 	<version>1</version>
 </factory>
 
-<factory id="4" uuid="49e466a6896b4dc4a3cccd7cbc432116">
+<factory id="3" uuid="49e466a6896b4dc4a3cccd7cbc432116">
 	<description>3D Object Media</description>
 	<manufacturer>Apple</manufacturer>
 	<version>1</version>
 </factory>
 
-<factory id="5" uuid="65cb4dc9d4504fa281921f5f751fba06">
+<factory id="4" uuid="65cb4dc9d4504fa281921f5f751fba06">
 	<description>Widget</description>
 	<manufacturer>Apple</manufacturer>
 	<version>1</version>
 </factory>
 
-<factory id="6" uuid="66fc0d6af6a911d6a7a7000393670732">
+<factory id="5" uuid="66fc0d6af6a911d6a7a7000393670732">
 	<description>Image</description>
 	<manufacturer>Apple</manufacturer>
 	<version>1</version>
 </factory>
 
-<factory id="7" uuid="742cb47d503411d891e9000a95b0025a">
+<factory id="6" uuid="742cb47d503411d891e9000a95b0025a">
 	<description>Rate</description>
 	<manufacturer>Apple</manufacturer>
 	<version>1</version>
 </factory>
 
-<factory id="8" uuid="7abc31338be411d795d800039366fb58">
+<factory id="7" uuid="7abc31338be411d795d800039366fb58">
 	<description>Ramp</description>
 	<manufacturer>Apple</manufacturer>
 	<version>1</version>
 </factory>
 
-<factory id="9" uuid="7d468273c013498e9806a0d7bc32fddf">
+<factory id="8" uuid="7d468273c013498e9806a0d7bc32fddf">
 	<description>Project</description>
 	<manufacturer>Apple</manufacturer>
 	<version>1</version>
 </factory>
 
-<factory id="10" uuid="a1a40f72a21111d7a40e00039366fb58">
+<factory id="9" uuid="a1a40f72a21111d7a40e00039366fb58">
 	<description>Fade In/Fade Out</description>
 	<manufacturer>Apple</manufacturer>
 	<version>1</version>
 </factory>
 
-<factory id="11" uuid="dbca752470fd11d7980100039389b702">
+<factory id="10" uuid="dbca752470fd11d7980100039389b702">
 	<description>Channel</description>
 	<manufacturer>Apple</manufacturer>
 	<version>1</version>
 </factory>
 
-<factory id="12" uuid="dd0036f96c9e4bfdadb82f71fbf5c9d8">
+<factory id="11" uuid="dd0036f96c9e4bfdadb82f71fbf5c9d8">
 	<description>Rig Behavior</description>
 	<manufacturer>Apple</manufacturer>
 	<version>1</version>
 </factory>
 
-<factory id="13" uuid="de1a9415beb34e5fb0964d1528bef14a">
+<factory id="12" uuid="de1a9415beb34e5fb0964d1528bef14a">
 	<description>Camera</description>
 	<manufacturer>Apple</manufacturer>
 	<version>1</version>
 </factory>
 
-<factory id="14" uuid="e35c74f01d5042f6b468eb530169bfb7">
+<factory id="13" uuid="e35c74f01d5042f6b468eb530169bfb7">
 	<description>Widget</description>
 	<manufacturer>Apple</manufacturer>
 	<version>1</version>
 </factory>
 
-<factory id="15" uuid="ec6a810f5a4c4fd0b298969462464ecd">
+<factory id="14" uuid="ec6a810f5a4c4fd0b298969462464ecd">
 	<description>3D Object</description>
 	<manufacturer>Apple</manufacturer>
 	<version>1</version>
 </factory>
 
-<factory id="16" uuid="fdc1944b229111d7b1c300039389b702">
+<factory id="15" uuid="fdc1944b229111d7b1c300039389b702">
 	<description>Channel</description>
 	<manufacturer>Apple</manufacturer>
 	<version>1</version>
@@ -133,7 +127,7 @@
 	<cameraType>0</cameraType>
 	<cameraName>Active Camera</cameraName>
 	<mirrorHMD>0</mirrorHMD>
-	<panZoom camera="0" zoom="0.71203702688217163" panX="179" panY="5" mode="2" centered="1"/>
+	<panZoom camera="0" zoom="0.62037038803100586" panX="288" panY="5" mode="2" centered="1"/>
 </viewer>
 
 <projectPanel>
@@ -170,7 +164,7 @@
 	<displayEffects>1</displayEffects>
 	<videoVerticalZoom>2</videoVerticalZoom>
 	<audioVerticalZoom>2</audioVerticalZoom>
-	<displayRange in="-531900583 2082988879 3 0" out="10255354500 1000000000 3 0"/>
+	<displayRange in="-441354064 1681640625 3 0" out="10247931279 1000000000 3 0"/>
 </timeline>
 
 <curveeditor>
@@ -178,8 +172,8 @@
 	<snapping>0</snapping>
 	<displayAudioWaveform>0</displayAudioWaveform>
 	<lockKeyframesInTime>0</lockKeyframesInTime>
-	<displayRange in="-531900583 2082988879 3 0" out="10255354500 1000000000 3 0"/>
-	<currentviewvolume originx="-0.25535449966269358" originy="-62.5" width="10.510709" height="125"/>
+	<displayRange in="-441354064 1681640625 3 0" out="10247931279 1000000000 3 0"/>
+	<currentviewvolume originx="-0.26245444920789779" originy="-62.5" width="10.510385727999999" height="125"/>
 	<snapshotChannels>0</snapshotChannels>
 </curveeditor>
 
@@ -228,29 +222,24 @@
 	</sceneSettings>
 	<publishSettings>
 		<version>2</version>
-		<target object="3001924615" channel="./2/100" name="Show Tips"/>
-		<target object="3001924638" channel="./2/100" name="🔶 Object"/>
-		<target object="3001924369" channel="./2/303" name="Custom Unit Size"/>
-		<target object="3001924369" channel="./2/304" name="Orientation"/>
+		<target object="3001924638" channel="./2/100" name="🔶 OBJECT"/>
 		<target object="3001924369" channel="./1/100/101" name="Object Position"/>
 		<target object="3001924369" channel="./1/100/109" name="Object Rotation"/>
 		<target object="10003" channel="./1/100/109" name="Center Rotation"/>
 		<target object="3001924369" channel="./1/100/105" name="Object Scale"/>
 		<target object="10003" channel="./1/100/105" name="Center Scale"/>
-		<target object="3001924639" channel="./2/100" name="🔶 Animation"/>
-		<target object="3001924465" channel="./200" name="Fade In Time"/>
-		<target object="3001924585" channel="./2/100" name="Scale In"/>
+		<target object="3001924639" channel="./2/100" name="🔶 ANIMATION"/>
+		<target object="3001924465" channel="./200" name="Fade In Frames"/>
 		<target object="3001924582" channel="./2/100" name="Scale In Frames"/>
-		<target object="3001924465" channel="./201" name="Fade Out Time"/>
-		<target object="3001924590" channel="./2/100" name="Scale Out"/>
+		<target object="3001924465" channel="./201" name="Fade Out Frames"/>
 		<target object="3001924588" channel="./2/100" name="Scale Out Frames"/>
-		<target object="3001924406" channel="./200" name="Ongoing Rotate X"/>
-		<target object="3001924425" channel="./200" name="Ongoing Rotate Y"/>
-		<target object="3001924444" channel="./200" name="Ongoing Rotate Z"/>
+		<target object="3001924406" channel="./200" name="Ongoing X Rotation"/>
+		<target object="3001924425" channel="./200" name="Ongoing Y Rotation"/>
+		<target object="3001924444" channel="./200" name="Ongoing Z Rotation"/>
 		<target object="3001924467" channel="./1/100/101" name="Camera Position"/>
 		<target object="3001924467" channel="./1/100/109" name="Camera Rotation"/>
 	</publishSettings>
-	<currentFrame>317440 153600 1 0</currentFrame>
+	<currentFrame>719360 153600 1 0</currentFrame>
 	<activeLayer>10003</activeLayer>
 	<timeRange offset="0 1 1 0" duration="1536000 153600 1 0"/>
 	<playRange offset="0 1 1 0" duration="1536000 153600 1 0"/>
@@ -265,8 +254,8 @@
 	</timemarkerset>
 	<guideset/>
 	<curvesets selected="1"/>
-	<scenenode name="Project" id="10000" factoryID="9" version="5">
-		<scenenode name="Widget" id="10002" factoryID="5" version="5">
+	<scenenode name="Project" id="10000" factoryID="8" version="5">
+		<scenenode name="Widget" id="10002" factoryID="4" version="5">
 			<snapshot>2</snapshot>
 			<snapshot>1</snapshot>
 			<flags>0</flags>
@@ -299,8 +288,8 @@
 		</parameter>
 		<parameter name="Object" id="2" flags="8589938704"/>
 	</scenenode>
-	<scenenode name="Rig" id="3001924580" factoryID="2" version="5">
-		<scenenode name="🔶 Animation" id="3001924639" factoryID="14" version="5">
+	<scenenode name="Rig" id="3001924580" factoryID="1" version="5">
+		<scenenode name="🔶 Animation" id="3001924639" factoryID="13" version="5">
 			<affecting>2</affecting>
 			<snapshot>3</snapshot>
 			<flags>0</flags>
@@ -324,7 +313,7 @@
 				</parameter>
 			</parameter>
 		</scenenode>
-		<scenenode name="🔶 Object" id="3001924638" factoryID="14" version="5">
+		<scenenode name="🔶 Object" id="3001924638" factoryID="13" version="5">
 			<affecting>2</affecting>
 			<snapshot>3</snapshot>
 			<flags>0</flags>
@@ -348,9 +337,10 @@
 				</parameter>
 			</parameter>
 		</scenenode>
-		<scenenode name="Show Tips" id="3001924615" factoryID="14" version="5">
-			<affecting>1</affecting>
+		<scenenode name="Scale In Frames" id="3001924582" factoryID="13" version="5">
+			<affecting>3</affecting>
 			<snapshot>1</snapshot>
+			<snapshot>3</snapshot>
 			<snapshot>2</snapshot>
 			<flags>0</flags>
 			<timing in="0 1 1 0" out="-2560 153600 1 0" offset="0 1 1 0"/>
@@ -358,72 +348,29 @@
 			<baseFlags>16</baseFlags>
 			<parameter name="Properties" id="1" flags="8589938704"/>
 			<parameter name="Object" id="2" flags="8589938704">
-				<parameter name="Options" id="103" flags="8589938688"/>
-				<parameter name="Hidden" id="102" flags="8589934608" default="0" value="2"/>
+				<parameter name="Options" id="103" flags="8589938688">
+					<parameter name="Range Minimum" id="104" flags="77309411344" default="0" value="0"/>
+					<parameter name="Range Maximum" id="105" flags="77309411344" default="100" value="120"/>
+				</parameter>
+				<parameter name="Hidden" id="102" flags="8589934608" default="0" value="0"/>
 				<parameter name="Snapshots" id="101" flags="8589938706">
 					<parameter name="Snapshots" id="1" flags="8589938704">
 						<parameter name="Value" id="1" flags="8589934608" default="0" value="0"/>
 						<parameter name="Interpolation" id="2" flags="8590000144" default="1" value="1"/>
+					</parameter>
+					<parameter name="Snapshots" id="3" flags="4112">
+						<parameter name="Value" id="1" flags="16" default="0" value="0.16834799757281554"/>
+						<parameter name="Interpolation" id="2" flags="65552" default="1" value="1"/>
 					</parameter>
 					<parameter name="Snapshots" id="2" flags="8589938704">
 						<parameter name="Value" id="1" flags="8589934608" default="0" value="1"/>
 						<parameter name="Interpolation" id="2" flags="8590000144" default="1" value="1"/>
 					</parameter>
 				</parameter>
-				<parameter name="Show Tips" id="100" flags="8589934608" default="0" value="0"/>
+				<parameter name="Scale In Frames" id="100" flags="8589934864" default="0" value="0.25"/>
 			</parameter>
 		</scenenode>
-		<scenenode name="Scale Up" id="3001924585" factoryID="14" version="5">
-			<affecting>1</affecting>
-			<snapshot>1</snapshot>
-			<snapshot>2</snapshot>
-			<flags>0</flags>
-			<timing in="0 1 1 0" out="-2560 153600 1 0" offset="0 1 1 0"/>
-			<foldFlags>0</foldFlags>
-			<baseFlags>16</baseFlags>
-			<parameter name="Properties" id="1" flags="8589938704"/>
-			<parameter name="Object" id="2" flags="8589938704">
-				<parameter name="Options" id="103" flags="8589938688"/>
-				<parameter name="Hidden" id="102" flags="8589934608" default="0" value="2"/>
-				<parameter name="Snapshots" id="101" flags="8589938706">
-					<parameter name="Snapshots" id="1" flags="8589938704">
-						<parameter name="Value" id="1" flags="8589934608" default="0" value="0"/>
-						<parameter name="Interpolation" id="2" flags="8590000144" default="1" value="1"/>
-					</parameter>
-					<parameter name="Snapshots" id="2" flags="8589938704">
-						<parameter name="Value" id="1" flags="8589934608" default="0" value="1"/>
-						<parameter name="Interpolation" id="2" flags="8590000144" default="1" value="1"/>
-					</parameter>
-				</parameter>
-				<parameter name="Scale Up" id="100" flags="8589934608" default="0" value="1"/>
-			</parameter>
-		</scenenode>
-		<scenenode name="Scale Down" id="3001924590" factoryID="14" version="5">
-			<affecting>1</affecting>
-			<snapshot>1</snapshot>
-			<snapshot>2</snapshot>
-			<flags>0</flags>
-			<timing in="0 1 1 0" out="-2560 153600 1 0" offset="0 1 1 0"/>
-			<foldFlags>0</foldFlags>
-			<baseFlags>16</baseFlags>
-			<parameter name="Properties" id="1" flags="8589938704"/>
-			<parameter name="Object" id="2" flags="8589938704">
-				<parameter name="Options" id="103" flags="8589938688"/>
-				<parameter name="Hidden" id="102" flags="8589934608" default="0" value="2"/>
-				<parameter name="Snapshots" id="101" flags="8589938706">
-					<parameter name="Snapshots" id="1" flags="8589938704">
-						<parameter name="Value" id="1" flags="8589934608" default="0" value="0"/>
-						<parameter name="Interpolation" id="2" flags="8590000144" default="1" value="1"/>
-					</parameter>
-					<parameter name="Snapshots" id="2" flags="8589938704">
-						<parameter name="Value" id="1" flags="8589934608" default="0" value="1"/>
-						<parameter name="Interpolation" id="2" flags="8590000144" default="1" value="1"/>
-					</parameter>
-				</parameter>
-				<parameter name="Scale Down" id="100" flags="8589934608" default="0" value="1"/>
-			</parameter>
-		</scenenode>
-		<scenenode name="Scale Down Frames" id="3001924588" factoryID="14" version="5">
+		<scenenode name="Scale Out Frames" id="3001924588" factoryID="13" version="5">
 			<affecting>3</affecting>
 			<snapshot>1</snapshot>
 			<snapshot>2</snapshot>
@@ -434,10 +381,10 @@
 			<parameter name="Properties" id="1" flags="8589938704"/>
 			<parameter name="Object" id="2" flags="8589938704">
 				<parameter name="Options" id="103" flags="8589938688">
-					<parameter name="Range Minimum" id="104" flags="77309411344" default="0" value="20"/>
+					<parameter name="Range Minimum" id="104" flags="77309411344" default="0" value="0"/>
 					<parameter name="Range Maximum" id="105" flags="77309411344" default="100" value="120"/>
 				</parameter>
-				<parameter name="Hidden" id="102" flags="8589934608" default="0" value="2"/>
+				<parameter name="Hidden" id="102" flags="8589934608" default="0" value="0"/>
 				<parameter name="Snapshots" id="101" flags="8589938706">
 					<parameter name="Snapshots" id="1" flags="8589938704">
 						<parameter name="Value" id="1" flags="8589934608" default="0" value="0"/>
@@ -448,35 +395,7 @@
 						<parameter name="Interpolation" id="2" flags="8590000144" default="1" value="1"/>
 					</parameter>
 				</parameter>
-				<parameter name="Scale Down Frames" id="100" flags="8589934864" default="0" value="0.40000000000000002"/>
-			</parameter>
-		</scenenode>
-		<scenenode name="Scale Up Frames" id="3001924582" factoryID="14" version="5">
-			<affecting>3</affecting>
-			<snapshot>1</snapshot>
-			<snapshot>2</snapshot>
-			<flags>0</flags>
-			<timing in="0 1 1 0" out="-2560 153600 1 0" offset="0 1 1 0"/>
-			<foldFlags>0</foldFlags>
-			<baseFlags>16</baseFlags>
-			<parameter name="Properties" id="1" flags="8589938704"/>
-			<parameter name="Object" id="2" flags="8589938704">
-				<parameter name="Options" id="103" flags="8589938688">
-					<parameter name="Range Minimum" id="104" flags="77309411344" default="0" value="20"/>
-					<parameter name="Range Maximum" id="105" flags="77309411344" default="100" value="120"/>
-				</parameter>
-				<parameter name="Hidden" id="102" flags="8589934608" default="0" value="2"/>
-				<parameter name="Snapshots" id="101" flags="8589938706">
-					<parameter name="Snapshots" id="1" flags="8589938704">
-						<parameter name="Value" id="1" flags="8589934608" default="0" value="0.20000000000000001"/>
-						<parameter name="Interpolation" id="2" flags="8590000144" default="1" value="1"/>
-					</parameter>
-					<parameter name="Snapshots" id="2" flags="8589938704">
-						<parameter name="Value" id="1" flags="8589934608" default="0" value="1"/>
-						<parameter name="Interpolation" id="2" flags="8590000144" default="1" value="1"/>
-					</parameter>
-				</parameter>
-				<parameter name="Scale Up Frames" id="100" flags="8589934864" default="0" value="0.40000000000000002"/>
+				<parameter name="Scale Out Frames" id="100" flags="8589934864" default="0" value="0.25"/>
 			</parameter>
 		</scenenode>
 		<flags>0</flags>
@@ -486,7 +405,7 @@
 		<parameter name="Properties" id="1" flags="8589938704"/>
 		<parameter name="Object" id="2" flags="8589938704"/>
 	</scenenode>
-	<scenenode name="Camera" id="3001924467" factoryID="13" version="5">
+	<scenenode name="Camera" id="3001924467" factoryID="12" version="5">
 		<aspectRatio>1</aspectRatio>
 		<flags>0</flags>
 		<timing in="0 1 1 0" out="1533440 153600 1 0" offset="0 1 1 0"/>
@@ -495,74 +414,19 @@
 		<parameter name="Properties" id="1" flags="8589938704"/>
 		<parameter name="Object" id="2" flags="8589938704"/>
 	</scenenode>
-	<layer name="Tips" id="3001924596">
-		<aspectRatio>1</aspectRatio>
-		<flags>0</flags>
-		<timing in="0 1 1 0" out="-2560 153600 1 0" offset="0 1 1 0"/>
-		<foldFlags>0</foldFlags>
-		<baseFlags>524304</baseFlags>
-		<parameter name="Properties" id="1" flags="8589938704">
-			<parameter name="Blending" id="200" flags="8589938704">
-				<parameter name="Opacity" id="202" flags="8589936656" default="1" value="1"/>
-			</parameter>
-			<parameter name="Lighting" id="230" flags="8589938706">
-				<foldFlags>15</foldFlags>
-			</parameter>
-			<parameter name="Shadows" id="234" flags="8589938706">
-				<foldFlags>15</foldFlags>
-			</parameter>
-			<parameter name="Reflection" id="223" flags="8589971474">
-				<foldFlags>131087</foldFlags>
-			</parameter>
-			<parameter name="Color" id="243" flags="8589938690">
-				<parameter name="Hidden Channel" id="245" flags="8589934610" default="1" value="3"/>
-				<parameter name="Conversion Type" id="247" flags="8590032912" default="3" value="3"/>
-				<parameter name="PQ Peak (nits)" id="248" flags="8589967376" default="1000" value="1000"/>
-			</parameter>
-		</parameter>
-		<parameter name="Object" id="2" flags="8589938704">
-			<parameter name="Type" id="307" flags="12884901904" default="1" value="0"/>
-			<parameter name="Fixed Width" id="302" flags="12884901908" default="3840" value="3840"/>
-			<parameter name="Fixed Height" id="303" flags="12884901908" default="2160" value="2160"/>
-			<parameter name="Flatten" id="311" flags="8589934610" default="0" value="0"/>
-			<parameter name="Layer Order" id="305" flags="8589934610" default="0" value="0"/>
-			<parameter name="Aperture Width" id="312" flags="12884901906" default="3840" value="3840"/>
-			<parameter name="Aperture Height" id="313" flags="12884901906" default="2160" value="2160"/>
-		</parameter>
-		<behavior name="Rig Behavior" id="3001924616" factoryID="12">
-			<channelBehavior affectingFactory="ee6b4918387a11d7a02100039375d2ba" affectingChannel="./1/200/202" sliderRange="1"/>
-			<timing in="0 1 1 0" out="-2560 153600 1 0" offset="0 1 1 0"/>
-			<baseFlags>8589934610</baseFlags>
-			<parameter name="Affecting Object (Hidden)" id="199" flags="77309476882" default="0" value="3001924596"/>
-			<parameter name="Widget" id="200" flags="77309476880" default="0" value="3001924615"/>
-			<parameter name="Snapshots" id="202" flags="8590004242">
-				<flags>8590004242</flags>
-				<parameter name="Opacity" id="1" factoryID="1">
-					<flags>8589936656</flags>
-					<curve type="1" default="1" value="0">
-						<min>0</min>
-						<max>1</max>
-					</curve>
-				</parameter>
-				<parameter name="Opacity" id="2" factoryID="1">
-					<flags>8589936656</flags>
-					<curve type="1" default="1" value="1">
-						<min>0</min>
-						<max>1</max>
-					</curve>
-				</parameter>
-			</parameter>
-		</behavior>
-	</layer>
 	<layer name="3D Object" id="10003">
-		<scenenode name="Replace Me" id="3001924369" factoryID="15" version="5">
+		<scenenode name="Replace Me" id="3001924369" factoryID="14" version="5">
 			<aspectRatio>1</aspectRatio>
 			<flags>0</flags>
 			<timing in="0 1 1 0" out="1533440 153600 1 0" offset="0 1 1 0"/>
-			<foldFlags>0</foldFlags>
-			<baseFlags>524304</baseFlags>
+			<foldFlags>65536</foldFlags>
+			<baseFlags>524368</baseFlags>
 			<parameter name="Properties" id="1" flags="8589938704">
 				<parameter name="Transform" id="100" flags="8589938704">
+					<parameter name="Position" id="101" flags="8589938704">
+						<foldFlags>15</foldFlags>
+						<parameter name="Y" id="2" flags="8589934608" default="0" value="-200"/>
+					</parameter>
 					<parameter name="Rotation" id="109" flags="8589938704">
 						<foldFlags>15</foldFlags>
 						<parameter name="X" id="1" flags="8606711824" default="0" value="0"/>
@@ -625,26 +489,29 @@
 			<parameter name="Object" id="2" flags="8589938704">
 				<parameter name="Custom Unit Size" id="303" flags="12901711872" default="18.702622737745425" value="18.702622737745425"/>
 			</parameter>
-			<behavior name="Rate Rot X" id="3001924406" factoryID="7">
+			<behavior name="Rate Rot X" id="3001924406" factoryID="6">
 				<channelBehavior affectingFactory="ec6a810f5a4c4fd0b298969462464ecd" affectingChannel="./1/100/109/1" sliderRange="3.4028234663852886e+38"/>
 				<timing in="0 1 1 0" out="1533440 153600 1 0" offset="0 1 1 0"/>
-				<baseFlags>8589934608</baseFlags>
+				<baseFlags>8589934672</baseFlags>
+				<foldFlags>65536</foldFlags>
 				<parameter name="Affecting Object (Hidden)" id="199" flags="77309476882" default="0" value="3001924369"/>
 			</behavior>
-			<behavior name="Rate Rot Y" id="3001924425" factoryID="7">
+			<behavior name="Rate Rot Y" id="3001924425" factoryID="6">
 				<channelBehavior affectingFactory="ec6a810f5a4c4fd0b298969462464ecd" affectingChannel="./1/100/109/2" sliderRange="3.4028234663852886e+38"/>
 				<timing in="0 1 1 0" out="1533440 153600 1 0" offset="0 1 1 0"/>
-				<baseFlags>8589934608</baseFlags>
+				<baseFlags>8589934672</baseFlags>
+				<foldFlags>65536</foldFlags>
 				<parameter name="Affecting Object (Hidden)" id="199" flags="77309476882" default="0" value="3001924369"/>
 			</behavior>
-			<behavior name="Rate Rot Z" id="3001924444" factoryID="7">
+			<behavior name="Rate Rot Z" id="3001924444" factoryID="6">
 				<channelBehavior affectingFactory="ec6a810f5a4c4fd0b298969462464ecd" affectingChannel="./1/100/109/3" sliderRange="3.4028234663852886e+38"/>
 				<timing in="0 1 1 0" out="1533440 153600 1 0" offset="0 1 1 0"/>
-				<baseFlags>8589934608</baseFlags>
+				<baseFlags>8589934672</baseFlags>
+				<foldFlags>65536</foldFlags>
 				<parameter name="Affecting Object (Hidden)" id="199" flags="77309476882" default="0" value="3001924369"/>
 			</behavior>
 		</scenenode>
-		<scenenode name="Title Background" id="10007" factoryID="6" version="5">
+		<scenenode name="Title Background" id="10007" factoryID="5" version="5">
 			<validTracks>1</validTracks>
 			<aspectRatio>1</aspectRatio>
 			<flags>0</flags>
@@ -699,7 +566,7 @@
 		<baseFlags>524304</baseFlags>
 		<parameter name="Properties" id="1" flags="8589938704">
 			<parameter name="Transform" id="100" flags="8589938704">
-				<parameter name="Scale" id="105" flags="8589938705">
+				<parameter name="Scale" id="105" flags="8589938704">
 					<foldFlags>15</foldFlags>
 					<parameter name="X" id="1" flags="8589934608" default="1" value="1"/>
 					<parameter name="Y" id="2" flags="8589934608" default="1" value="1"/>
@@ -735,29 +602,31 @@
 			<parameter name="Aperture Width" id="312" flags="12884901906" default="3840" value="3840"/>
 			<parameter name="Aperture Height" id="313" flags="12884901906" default="2160" value="2160"/>
 		</parameter>
-		<behavior name="Ramp On" id="3001924577" factoryID="8">
+		<behavior name="Ramp On" id="3001924577" factoryID="7">
 			<channelBehavior affectingFactory="ee6b4918387a11d7a02100039375d2ba" affectingChannel="./1/100/105" sliderRange="4"/>
 			<timing in="0 1 1 0" out="307200 153600 1 0" offset="0 1 1 0"/>
 			<baseFlags>8589934608</baseFlags>
 			<parameter name="Affecting Object (Hidden)" id="199" flags="77309476882" default="0" value="10003"/>
 			<parameter name="Start Value" id="202" flags="8589934608" default="0" value="-1"/>
 			<parameter name="Curvature" id="204" flags="8589934608" default="0" value="1"/>
-			<parameter name="End Offset" id="201" flags="8589934592" default="0" value="0"/>
+			<parameter name="End Offset" id="201" flags="8589934592" default="0" value="99.991656553398059"/>
 		</behavior>
-		<behavior name="Ramp Off" id="3001924579" factoryID="8">
+		<behavior name="Ramp Off" id="3001924579" factoryID="7">
 			<channelBehavior affectingFactory="ee6b4918387a11d7a02100039375d2ba" affectingChannel="./1/100/105" sliderRange="4"/>
 			<timing in="1226240 153600 1 0" out="1533440 153600 1 0" offset="1226240 153600 1 0"/>
 			<baseFlags>8589934608</baseFlags>
 			<parameter name="Affecting Object (Hidden)" id="199" flags="77309476882" default="0" value="10003"/>
 			<parameter name="End Value" id="203" flags="8589934608" default="0" value="-1"/>
 			<parameter name="Curvature" id="204" flags="8589934608" default="0" value="1"/>
-			<parameter name="Start Offset" id="200" flags="8589934592" default="0" value="100"/>
+			<parameter name="Start Offset" id="200" flags="8589934592" default="0" value="0"/>
 		</behavior>
-		<behavior name="Fade In/Fade Out" id="3001924465" factoryID="10">
-			<timing in="0 1 1 0" out="1533440 153600 1 0" offset="0 1 1 0"/>
+		<behavior name="Fade In/Fade Out" id="3001924465" factoryID="9">
+			<timing in="0 1 1 0" out="1530880 153600 1 0" offset="0 1 1 0"/>
 			<baseFlags>8589934608</baseFlags>
+			<parameter name="Fade In Time" id="200" flags="8589934608" default="20" value="30"/>
+			<parameter name="Fade Out Time" id="201" flags="8589934608" default="20" value="30"/>
 		</behavior>
-		<behavior name="Rig Behavior" id="3001924583" factoryID="12">
+		<behavior name="Rig Behavior" id="3001924583" factoryID="11">
 			<channelBehavior affectingFactory="7abc31338be411d795d800039366fb58" affectingChannel="./201" sliderRange="100"/>
 			<timing in="0 1 1 0" out="-2560 153600 1 0" offset="0 1 1 0"/>
 			<baseFlags>8589934610</baseFlags>
@@ -765,35 +634,21 @@
 			<parameter name="Widget" id="200" flags="77309476880" default="0" value="3001924582"/>
 			<parameter name="Snapshots" id="202" flags="8590004242">
 				<flags>8590004242</flags>
-				<parameter name="End Offset" id="1" factoryID="16">
+				<parameter name="End Offset" id="1" factoryID="15">
 					<flags>8589934592</flags>
-					<curve type="0" default="0" value="100"/>
+					<curve type="0" default="0" value="120"/>
 				</parameter>
-				<parameter name="End Offset" id="2" factoryID="16">
+				<parameter name="End Offset" id="2" factoryID="15">
 					<flags>8589934592</flags>
-					<curve type="1" default="0" value="0"/>
+					<curve type="0" default="0" value="0"/>
+				</parameter>
+				<parameter name="End Offset" id="3" factoryID="15">
+					<flags>8589934592</flags>
+					<curve type="0" default="0" value="99.991656553398059"/>
 				</parameter>
 			</parameter>
 		</behavior>
-		<behavior name="Rig Behavior 1" id="3001924586" factoryID="12">
-			<channelBehavior affectingFactory="7abc31338be411d795d800039366fb58" affectingChannel="./202" sliderRange="100"/>
-			<timing in="0 1 1 0" out="-2560 153600 1 0" offset="0 1 1 0"/>
-			<baseFlags>8589934610</baseFlags>
-			<parameter name="Affecting Object (Hidden)" id="199" flags="77309476882" default="0" value="3001924577"/>
-			<parameter name="Widget" id="200" flags="77309476880" default="0" value="3001924585"/>
-			<parameter name="Snapshots" id="202" flags="8590004242">
-				<flags>8590004242</flags>
-				<parameter name="Start Value" id="1" factoryID="16">
-					<flags>8589934608</flags>
-					<curve type="1" default="0" value="0"/>
-				</parameter>
-				<parameter name="Start Value" id="2" factoryID="16">
-					<flags>8589934608</flags>
-					<curve type="0" default="0" value="-1"/>
-				</parameter>
-			</parameter>
-		</behavior>
-		<behavior name="Rig Behavior 2" id="3001924589" factoryID="12">
+		<behavior name="Rig Behavior 2" id="3001924589" factoryID="11">
 			<channelBehavior affectingFactory="7abc31338be411d795d800039366fb58" affectingChannel="./200" sliderRange="100"/>
 			<timing in="0 1 1 0" out="-2560 153600 1 0" offset="0 1 1 0"/>
 			<baseFlags>8589934610</baseFlags>
@@ -801,38 +656,20 @@
 			<parameter name="Widget" id="200" flags="77309476880" default="0" value="3001924588"/>
 			<parameter name="Snapshots" id="202" flags="8590004242">
 				<flags>8590004242</flags>
-				<parameter name="Start Offset" id="1" factoryID="16">
+				<parameter name="Start Offset" id="1" factoryID="15">
 					<flags>8589934592</flags>
-					<curve type="1" default="0" value="0"/>
+					<curve type="1" default="0" value="120"/>
 				</parameter>
-				<parameter name="Start Offset" id="2" factoryID="16">
+				<parameter name="Start Offset" id="2" factoryID="15">
 					<flags>8589934592</flags>
-					<curve type="0" default="0" value="100"/>
-				</parameter>
-			</parameter>
-		</behavior>
-		<behavior name="Rig Behavior 3" id="3001924591" factoryID="12">
-			<channelBehavior affectingFactory="7abc31338be411d795d800039366fb58" affectingChannel="./203" sliderRange="100"/>
-			<timing in="0 1 1 0" out="-2560 153600 1 0" offset="0 1 1 0"/>
-			<baseFlags>8589934610</baseFlags>
-			<parameter name="Affecting Object (Hidden)" id="199" flags="77309476882" default="0" value="3001924579"/>
-			<parameter name="Widget" id="200" flags="77309476880" default="0" value="3001924590"/>
-			<parameter name="Snapshots" id="202" flags="8590004242">
-				<flags>8590004242</flags>
-				<parameter name="End Value" id="1" factoryID="16">
-					<flags>8589934608</flags>
-					<curve type="1" default="0" value="0"/>
-				</parameter>
-				<parameter name="End Value" id="2" factoryID="16">
-					<flags>8589934608</flags>
-					<curve type="0" default="0" value="-1"/>
+					<curve type="0" default="0" value="0"/>
 				</parameter>
 			</parameter>
 		</behavior>
 	</layer>
 
 	<footage name="Media Layer" id="10006">
-		<scenenode name="Robot" id="3001924708" factoryID="4" version="5">
+		<scenenode name="Robot" id="3001924708" factoryID="3" version="5">
 			<relativeURL>Media/Robot.usdz</relativeURL>
 			<flags>0</flags>
 			<timing in="0 1 1 0" out="376320 153600 1 0" offset="0 1 1 0"/>
@@ -871,7 +708,7 @@
 			</parameter>
 		</clip>
 		<flags>0</flags>
-		<timing in="0 1 1 0" out="0 153600 1 0" offset="0 1 1 0"/>
+		<timing in="0 1 1 0" out="376320 153600 1 0" offset="0 1 1 0"/>
 		<foldFlags>0</foldFlags>
 		<baseFlags>524304</baseFlags>
 		<parameter name="Properties" id="1" flags="8589938704"/>
