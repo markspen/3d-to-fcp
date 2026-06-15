@@ -60,21 +60,21 @@ Each USDZ becomes a draggable title in FCP's Titles Browser under the "3D to FCP
 2. FCP title category naming — confirm "3D to FCP" shows correctly in Titles Browser without Motion open
 3. USDZ validation: `usdchecker` (Apple CLI from USD tools) may not be present on user machines — need fallback
 
-## Submission Status (as of 2026-05-28)
+## Submission Status (as of 2026-06-15)
 - **App is feature-complete v1.** 12 tests green, build clean. GitHub `markspen/3d-to-fcp` (public, `main`).
 - **Bundle ID:** `com.markspencer.ThreeDtoFCP`. SKU `3DTOFCP-001`.
 - **Build history:**
   - 1.0(1) — rejected. Guideline 2.1(a): no sample files provided. Guideline 4: no way to reopen window after close. Both fixed in 1.0(2).
-  - 1.0(2) — current build. Uploaded 2026-05-28. Fixes: (1) quit app on window close via `AppDelegate.applicationShouldTerminateAfterLastWindowClosed`; (2) added `LSApplicationCategoryType` and `ITSAppUsesNonExemptEncryption` to Info.plist. Mark smoke-tested — quit-on-close confirmed working.
-- **TestFlight internal:** Build 1.0(2) status "Testing" in internal group. Mark verified on device.
-- **TestFlight external:** Build 1.0(2) submitted for Beta App Review on 2026-05-28, status "Waiting for Review". Iain Anderson (funwithstuff@icloud.com) added to external group — invite will auto-send once Beta App Review clears.
+  - 1.0(2) — uploaded 2026-05-28. Beta App Review approved; tested by Iain Anderson (external) and Steve Martin. Status "Testing".
+  - 1.0(3) — **uploaded and submitted for App Store review 2026-06-15.** Changes vs 1.0(2): (1) updated `_Placeholder.moti` per Iain + Steve feedback (animation defaults, scenenode naming); (2) updated per-template thumbnail PNGs in `_Placeholder_new/`; (3) "Add More" button on the file list now returns to the drop zone (preserving queued files) instead of opening NSOpenPanel — DropZoneView gains a "Back to N queued file(s)" link when files are present.
 - **Sample files for App Review:** 9 Apple sample USDZ files in `sample-files/` folder of GitHub repo. Provided in response to Guideline 2.1(a) rejection.
-- **App Store review delays (systemic, May 2026):** Apple Developer Forums show widespread reports of 5–40+ day waits. Normal to wait.
-- **App Store listing:** fully filled in. Build deliberately NOT attached — will attach 1.0(2) after external testing wraps clean.
+- **App Store review delays (systemic, May–June 2026):** Apple Developer Forums show widespread reports of 5–40+ day waits. The submission UI's "up to 48 hours" message is optimistic boilerplate.
+- **App Store listing:** fully filled in. Build 1.0(3) attached and submitted 2026-06-15.
 - **Support URL:** `https://github.com/markspen/3d-to-fcp/issues`
 - **Privacy Policy URL:** `https://markspen.github.io/3d-to-fcp/privacy.html`
 - **App Store category:** Graphics & Design (primary), Video (secondary). `LSApplicationCategoryType` = `public.app-category.video`.
-- **Next steps:** (1) wait for Beta App Review → Iain tests; (2) once external testing clean, attach 1.0(2) to App Store submission and submit for full review.
+- **Decisions on 1.0(3):** skipped TestFlight round, went straight to App Store review. Mark personally tested the Motion template + Add More flow locally. Acceptable risk given the 5–40 day review wait.
+- **Next steps:** wait for App Store review verdict. If approved → live. If rejected → address feedback, bump to 1.0(4), resubmit.
 
 ## USDZ Conversion Toolchain
 - **CLI script:** `~/scripts/usdz-convert` — converts OBJ, GLTF, GLB to USDZ from the terminal. Supports single file, named output, and batch (`*.glb`). Output written alongside input file by default.
