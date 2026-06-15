@@ -30,8 +30,8 @@ struct FileListView: View {
             Divider()
 
             HStack {
-                Button("Add More…") {
-                    openFilePicker()
+                Button("Add More") {
+                    viewModel.state = .dropping
                 }
                 .buttonStyle(.plain)
                 .foregroundStyle(.secondary)
@@ -52,17 +52,6 @@ struct FileListView: View {
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 12)
-        }
-    }
-
-    private func openFilePicker() {
-        let panel = NSOpenPanel()
-        panel.allowsMultipleSelection = true
-        panel.canChooseDirectories = false
-        panel.allowedContentTypes = [.usdz]
-        panel.prompt = "Add"
-        if panel.runModal() == .OK {
-            viewModel.addFiles(panel.urls)
         }
     }
 }

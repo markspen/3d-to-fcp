@@ -52,6 +52,21 @@ struct DropZoneView: View {
             .controlSize(.large)
             .accessibilityHint("Open the file picker to select one or more USDZ files.")
 
+            if !viewModel.files.isEmpty {
+                Button {
+                    viewModel.state = .reviewing
+                } label: {
+                    HStack(spacing: 4) {
+                        Image(systemName: "chevron.left")
+                        Text("Back to \(viewModel.files.count) queued file\(viewModel.files.count == 1 ? "" : "s")")
+                    }
+                }
+                .buttonStyle(.plain)
+                .foregroundStyle(.secondary)
+                .font(.subheadline)
+                .accessibilityHint("Return to the file list without adding more files.")
+            }
+
             Spacer()
         }
         .animation(.easeInOut(duration: 0.2), value: isTargeted)
