@@ -60,13 +60,21 @@ Each USDZ becomes a draggable title in FCP's Titles Browser under the "3D to FCP
 2. FCP title category naming — confirm "3D to FCP" shows correctly in Titles Browser without Motion open
 3. USDZ validation: `usdchecker` (Apple CLI from USD tools) may not be present on user machines — need fallback
 
-## Submission Status (as of 2026-06-15)
+## App Name Change (2026-06-23) — "3D to FCP" → "3D to Timeline"
+- **Why:** 1.0(3) was rejected under **Guideline 5.2.5 (Legal — Intellectual Property)**. Apple flagged "FCP" in the app name + macOS display name as a stand-in for the Final Cut Pro trademark. Metadata-only rejection; the conversion engine was never in question.
+- **New name:** **3D to Timeline** ("timeline"/"NLE" is generic editing vocabulary, no Apple mark). Considered & rejected: anything with "FCP"/"Final Cut", "3D Portal" (icon has no portal — it's a clapperboard + low-poly 3D star), names with "Titles" (Mark: that's a publishing artifact, not the product).
+- **Apple trademark rule (verified at apple.com/legal/intellectual-property):** You may NOT use an Apple mark "as or as part of a product name." You MAY use it referentially ("for Final Cut Pro", "compatible with") as long as it's *less prominent than your product name*. So: name = FCP-free; "Final Cut Pro" allowed in the **description body**; keep it OUT of the **subtitle** (prominent metadata) to avoid a second 5.2.5 bounce.
+- **What changed in code (commit 704a90a on `main`, build bumped to 1.0(4)):** `CFBundleName`/`CFBundleDisplayName`/`PRODUCT_NAME` → "3D to Timeline"; `TEST_HOST` path updated; default Titles Browser category "3D to FCP" → **"3D Models"**; Help/UI strings updated, bare "FCP" expanded to "Final Cut Pro"; ConflictSheet now shows the live category name. **Bundle ID, target name, and module name UNCHANGED** (`com.markspencer.ThreeDtoFCP`) — changing the bundle ID would orphan the app per Apple's warning. 12/12 tests pass, built product is `3D to Timeline.app`.
+- **Still TODO in App Store Connect (browser):** rename app to "3D to Timeline", set generic subtitle, ensure description has "for Final Cut Pro", reply in Resolution Center (Submission ID `6c4e9d00-1328-46f6-94b3-352ea86e62d9`), upload + attach + resubmit 1.0(4).
+
+## Submission Status (as of 2026-06-23)
 - **App is feature-complete v1.** 12 tests green, build clean. GitHub `markspen/3d-to-fcp` (public, `main`).
 - **Bundle ID:** `com.markspencer.ThreeDtoFCP`. SKU `3DTOFCP-001`.
 - **Build history:**
   - 1.0(1) — rejected. Guideline 2.1(a): no sample files provided. Guideline 4: no way to reopen window after close. Both fixed in 1.0(2).
   - 1.0(2) — uploaded 2026-05-28. Beta App Review approved; tested by Iain Anderson (external) and Steve Martin. Status "Testing".
-  - 1.0(3) — **uploaded and submitted for App Store review 2026-06-15.** Changes vs 1.0(2): (1) updated `_Placeholder.moti` per Iain + Steve feedback (animation defaults, scenenode naming); (2) updated per-template thumbnail PNGs in `_Placeholder_new/`; (3) "Add More" button on the file list now returns to the drop zone (preserving queued files) instead of opening NSOpenPanel — DropZoneView gains a "Back to N queued file(s)" link when files are present.
+  - 1.0(3) — uploaded + submitted 2026-06-15. **Rejected 2026-06-22 (reviewed on MacBook Pro 14" Nov 2024) under Guideline 5.2.5** — "FCP" in app name/display name = Final Cut Pro trademark. See "App Name Change" section above.
+  - 1.0(4) — **prepared 2026-06-23.** Renames app "3D to FCP" → "3D to Timeline" to resolve 5.2.5. Code done + merged to `main` (commit 704a90a). Not yet archived/uploaded; App Store Connect metadata edits still pending.
 - **Sample files for App Review:** 9 Apple sample USDZ files in `sample-files/` folder of GitHub repo. Provided in response to Guideline 2.1(a) rejection.
 - **App Store review delays (systemic, May–June 2026):** Apple Developer Forums show widespread reports of 5–40+ day waits. The submission UI's "up to 48 hours" message is optimistic boilerplate.
 - **App Store listing:** fully filled in. Build 1.0(3) attached and submitted 2026-06-15.
@@ -74,7 +82,7 @@ Each USDZ becomes a draggable title in FCP's Titles Browser under the "3D to FCP
 - **Privacy Policy URL:** `https://markspen.github.io/3d-to-fcp/privacy.html`
 - **App Store category:** Graphics & Design (primary), Video (secondary). `LSApplicationCategoryType` = `public.app-category.video`.
 - **Decisions on 1.0(3):** skipped TestFlight round, went straight to App Store review. Mark personally tested the Motion template + Add More flow locally. Acceptable risk given the 5–40 day review wait.
-- **Next steps:** wait for App Store review verdict. If approved → live. If rejected → address feedback, bump to 1.0(4), resubmit.
+- **Next steps:** finish the 1.0(4) App Store Connect metadata edits (see "App Name Change" TODO), upload the 1.0(4) archive, resubmit. Then wait for verdict (5–40 day queue).
 
 ## USDZ Conversion Toolchain
 - **CLI script:** `~/scripts/usdz-convert` — converts OBJ, GLTF, GLB to USDZ from the terminal. Supports single file, named output, and batch (`*.glb`). Output written alongside input file by default.
