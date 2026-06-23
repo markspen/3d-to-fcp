@@ -18,7 +18,7 @@ final class AppViewModel {
     var applyConflictToAll = false
     var selectedConflictResolution: ConflictResolution = .overwrite
 
-    var categoryName: String = UserDefaults.standard.string(forKey: "categoryName") ?? "3D to FCP" {
+    var categoryName: String = UserDefaults.standard.string(forKey: "categoryName") ?? "3D Models" {
         didSet { UserDefaults.standard.set(categoryName, forKey: "categoryName") }
     }
 

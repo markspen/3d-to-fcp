@@ -8,7 +8,7 @@ struct ConflictSheet: View {
             VStack(alignment: .leading, spacing: 6) {
                 Text("Some titles already exist")
                     .font(.headline)
-                Text("\(viewModel.conflictingFiles.count) title\(viewModel.conflictingFiles.count == 1 ? "" : "s") with the same name \(viewModel.conflictingFiles.count == 1 ? "already exists" : "already exist") in \"3D to FCP\".")
+                Text("\(viewModel.conflictingFiles.count) title\(viewModel.conflictingFiles.count == 1 ? "" : "s") with the same name \(viewModel.conflictingFiles.count == 1 ? "already exists" : "already exist") in \"\(viewModel.categoryName)\".")
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
             }

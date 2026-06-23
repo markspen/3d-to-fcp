@@ -29,7 +29,7 @@ final class MotionTemplatesManager {
     @MainActor
     func requestAccess(in window: NSWindow?) async -> Bool {
         let panel = NSOpenPanel()
-        panel.message = "3D to FCP needs access to your Motion Templates folder to save titles."
+        panel.message = "3D to Timeline needs access to your Motion Templates folder to save titles."
         panel.prompt = "Grant Access"
         panel.canChooseFiles = false
         panel.canChooseDirectories = true

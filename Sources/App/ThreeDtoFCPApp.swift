@@ -22,7 +22,7 @@ struct ThreeDtoFCPApp: App {
             HelpCommands()
         }
 
-        Window("3D to FCP Help", id: "help") {
+        Window("3D to Timeline Help", id: "help") {
             HelpView()
         }
         .defaultSize(width: 580, height: 680)
@@ -35,7 +35,7 @@ private struct HelpCommands: Commands {
 
     var body: some Commands {
         CommandGroup(replacing: .help) {
-            Button("3D to FCP Help") {
+            Button("3D to Timeline Help") {
                 openWindow(id: "help")
             }
             .keyboardShortcut("?", modifiers: [.command])

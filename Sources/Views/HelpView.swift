@@ -7,7 +7,7 @@ struct HelpView: View {
                 header
 
                 section("What it does") {
-                    Text("3D to FCP turns USDZ 3D model files into draggable titles in Final Cut Pro. No Motion installation required.")
+                    Text("3D to Timeline turns USDZ 3D model files into draggable titles in Final Cut Pro. No Motion installation required.")
                 }
 
                 section("Quick start") {
@@ -20,7 +20,7 @@ struct HelpView: View {
                 }
 
                 section("Customizing the category") {
-                    Text("The **Titles Browser Category** field controls where your titles appear in Final Cut Pro. The default is \"3D to FCP\". Change it to group titles by project, client, or any other label. The name is remembered between launches.")
+                    Text("The **Titles Browser Category** field controls where your titles appear in Final Cut Pro. The default is \"3D Models\". Change it to group titles by project, client, or any other label. The name is remembered between launches.")
                 }
 
                 section("Handling conflicts") {
@@ -53,20 +53,20 @@ struct HelpView: View {
                 section("Troubleshooting") {
                     troubleshootingItem(
                         question: "My titles don't appear in Final Cut Pro.",
-                        answer: "Quit Final Cut Pro and reopen it. FCP scans the Titles folder when it launches."
+                        answer: "Quit Final Cut Pro and reopen it. Final Cut Pro scans the Titles folder when it launches."
                     )
                     troubleshootingItem(
                         question: "I see \"No access to Motion Templates folder.\"",
                         answer: "On first launch, the app asks for permission to read and write the Motion Templates folder. Click **Grant Access** and choose the Motion Templates folder when prompted. This is a one-time step."
                     )
                     troubleshootingItem(
-                        question: "The title processed, but FCP shows a default cube instead of my model.",
+                        question: "The title processed, but Final Cut Pro shows a default cube instead of my model.",
                         answer: "The USDZ file may be too small, corrupted, or not a valid USDZ. The app validates files before processing — check the file row for any error icon."
                     )
                 }
 
                 section("Credits") {
-                    Text("3D to FCP was created by Mark Spencer in partnership with Ripple Training.")
+                    Text("3D to Timeline was created by Mark Spencer in partnership with Ripple Training.")
                     Link("Visit rippletraining.com →", destination: URL(string: "https://rippletraining.com")!)
                         .font(.callout)
                 }
@@ -79,7 +79,7 @@ struct HelpView: View {
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text("3D to FCP")
+            Text("3D to Timeline")
                 .font(.largeTitle.bold())
             Text("Turn USDZ 3D models into Final Cut Pro titles.")
                 .font(.title3)

@@ -38,11 +38,11 @@ targets:
     info:
       path: ThreeDtoFCP/Info.plist
       properties:
-        CFBundleName: "3D to FCP"
-        CFBundleDisplayName: "3D to FCP"
+        CFBundleName: "3D to Timeline"
+        CFBundleDisplayName: "3D to Timeline"
         CFBundleIdentifier: com.markspencer.ThreeDtoFCP
         CFBundleShortVersionString: "1.0"
-        CFBundleVersion: "3"
+        CFBundleVersion: "4"
         LSMinimumSystemVersion: "14.0"
         NSHumanReadableCopyright: "© 2026 Mark Spencer"
         CFBundleIconName: AppIcon
@@ -62,11 +62,11 @@ targets:
 
     settings:
       base:
-        PRODUCT_NAME: "3D to FCP"
+        PRODUCT_NAME: "3D to Timeline"
         PRODUCT_MODULE_NAME: ThreeDtoFCP
         PRODUCT_BUNDLE_IDENTIFIER: com.markspencer.ThreeDtoFCP
         MARKETING_VERSION: "1.0"
-        CURRENT_PROJECT_VERSION: "3"
+        CURRENT_PROJECT_VERSION: "4"
         SWIFT_VERSION: "5.10"
         MACOSX_DEPLOYMENT_TARGET: "14.0"
         CODE_SIGN_STYLE: Automatic
@@ -99,5 +99,5 @@ targets:
         GENERATE_INFOPLIST_FILE: YES
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_TEAM: 56S86LMNZ6
-        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/3D to FCP.app/Contents/MacOS/3D to FCP"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/3D to Timeline.app/Contents/MacOS/3D to Timeline"
         BUNDLE_LOADER: "$(TEST_HOST)"
