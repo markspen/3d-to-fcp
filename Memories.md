@@ -74,7 +74,9 @@ Each USDZ becomes a draggable title in FCP's Titles Browser under the "3D to FCP
   - 1.0(1) — rejected. Guideline 2.1(a): no sample files provided. Guideline 4: no way to reopen window after close. Both fixed in 1.0(2).
   - 1.0(2) — uploaded 2026-05-28. Beta App Review approved; tested by Iain Anderson (external) and Steve Martin. Status "Testing".
   - 1.0(3) — uploaded + submitted 2026-06-15. **Rejected 2026-06-22 (reviewed on MacBook Pro 14" Nov 2024) under Guideline 5.2.5** — "FCP" in app name/display name = Final Cut Pro trademark. See "App Name Change" section above.
-  - 1.0(4) — **prepared 2026-06-23.** Renames app "3D to FCP" → "3D to Timeline" to resolve 5.2.5. Code done + merged to `main` (commit 704a90a). Not yet archived/uploaded; App Store Connect metadata edits still pending.
+  - 1.0(4) — **archived + uploaded to App Store Connect 2026-06-23.** Renames app "3D to FCP" → "3D to Timeline" to resolve 5.2.5. Code merged to `main` (commit 704a90a). Upload confirmed by TestFlight "ready to test" email at 7:40 AM. **Still NOT submitted** — App Store Connect metadata edits + resubmit pending (see "App Name Change" TODO above).
+    - Upload gotcha (Belize, flaky connection): Xcode Distribute first failed with HTTP 500 ("Error Downloading App Information"), then succeeded with "Upload completed with warnings" (skipped client-side validation + an Akamai `errors.edgesuite.net` HTML error page). **Both were transient CDN/network noise — the binary uploaded fine.** Don't re-upload on ambiguous warnings; confirm via the TestFlight "ready to test" email or the App Store Connect iOS app first (a duplicate build number is rejected as redundant).
+    - The TestFlight email title still read "3D to FCP 1.0 (4)" because the ASC **app-name field** is still the old name (renaming it is a pending metadata edit). The binary's display name is correctly "3D to Timeline" (verified inside the archive).
 - **Sample files for App Review:** 9 Apple sample USDZ files in `sample-files/` folder of GitHub repo. Provided in response to Guideline 2.1(a) rejection.
 - **App Store review delays (systemic, May–June 2026):** Apple Developer Forums show widespread reports of 5–40+ day waits. The submission UI's "up to 48 hours" message is optimistic boilerplate.
 - **App Store listing:** fully filled in. Build 1.0(3) attached and submitted 2026-06-15.
@@ -82,7 +84,7 @@ Each USDZ becomes a draggable title in FCP's Titles Browser under the "3D to FCP
 - **Privacy Policy URL:** `https://markspen.github.io/3d-to-fcp/privacy.html`
 - **App Store category:** Graphics & Design (primary), Video (secondary). `LSApplicationCategoryType` = `public.app-category.video`.
 - **Decisions on 1.0(3):** skipped TestFlight round, went straight to App Store review. Mark personally tested the Motion template + Add More flow locally. Acceptable risk given the 5–40 day review wait.
-- **Next steps:** finish the 1.0(4) App Store Connect metadata edits (see "App Name Change" TODO), upload the 1.0(4) archive, resubmit. Then wait for verdict (5–40 day queue).
+- **Next steps:** build 1.0(4) is uploaded and processed. Remaining is all in App Store Connect (browser/iOS app): (1) rename app → "3D to Timeline", (2) generic subtitle, (3) description includes "for Final Cut Pro", (4) attach build 1.0(4), (5) reply in Resolution Center (Submission ID `6c4e9d00-1328-46f6-94b3-352ea86e62d9`), (6) Submit for Review. Then wait for verdict (5–40 day queue).
 
 ## USDZ Conversion Toolchain
 - **CLI script:** `~/scripts/usdz-convert` — converts OBJ, GLTF, GLB to USDZ from the terminal. Supports single file, named output, and batch (`*.glb`). Output written alongside input file by default.
