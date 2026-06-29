@@ -121,3 +121,36 @@ Each USDZ becomes a draggable title in FCP's Titles Browser under the "3D to FCP
 - **Reply posted to Resolution Center 2026-06-26 and confirmed visible in the thread.** Status stayed "Rejected" after replying — that is NORMAL; a reply does NOT flip status to "In Review", the team re-evaluates the same submission in place. No resubmit button for an info-needed reply. Now waiting on verdict (~1-2 day turnaround).
 - **LESSON: replying in Resolution Center keeps the status "Rejected" until the reviewer acts.** Don't mistake the unchanged status for the reply not working — confirm the reply shows in the message thread with a timestamp instead. Do NOT Developer Reject (that path is only for uploading a new binary, e.g. if removing an entitlement).
 - **LESSON: keep entitlements minimal, but a USED entitlement is defensible by reply.** When 2.4.5(i) fires, first check whether code actually exercises the entitlement (grep the source). If yes -> reply with the exact code path + repro. If no -> remove it and ship a new binary. Here it was genuinely used.
+
+## Motion Template Version / FCP Compatibility (researched 2026-06-29)
+**Why this matters:** the app ships a bundled Motion title template (`_Placeholder.moti`) whose version stamp dictates which Final Cut Pro versions can open the generated titles. Got it wrong = customer/reviewer sees a red alert-badge, title won't load. This is the likely root cause of the Guideline 2.1 demo-video request (see below).
+
+### The two version tags in a .moti (lines 3 & 5)
+```
+<ozml version="5.14">              <- file FORMAT version (coarse; bumps rarely)
+<displayversion>6.2</displayversion>   <- = the Motion APP version, exactly (1:1)
+```
+- **ozml** = document format. `5.14` first shipped with FCP 10.8 / Motion 5.8 (Jun 20 2024) and is UNCHANGED through FCP 12.2. So ozml 5.14 = openable by FCP 10.8+ at the format level.
+- **displayversion** = the exact Motion version that wrote the file ("displayversion is exactly the same as the Motion version number"). `6.2` = Motion 6.2.
+- FCP checks BOTH; a host older than the displayversion's generation throws the red alert-badge. That's why backdating tools rewrite both numbers.
+
+### Motion <-> FCP ship in LOCKSTEP (same dates). Key rows (Apple release notes):
+- Motion 6.2 = **FCP 12.2** = Apr 9 2026 (CURRENT latest)
+- Motion 6.0 = FCP 12.0 = Jan 28 2026
+- Motion 5.11 = FCP 11.2 = Sep 19 2025
+- Motion 5.10 = FCP 11.1 = Mar 27 2025
+- Motion 5.9 = FCP 11.0 = Nov 13 2024  (displayversion 5.9, ozml 5.14)
+- Motion 5.8 = FCP 10.8 = Jun 20 2024  (displayversion 5.8, ozml 5.14 <- first ozml 5.14)
+- Full table + backdater tool: https://fcpxtemplates.com/fcpx-motion-compatibility/
+- Apple sources: Motion release notes support.apple.com/en-us/102746 ; FCP release notes support.apple.com/en-us/102825
+
+### Our shipped template = `displayversion 6.2` / `ozml 5.14` -> requires FCP 12.2 (latest)
+- **This is a FALSE lockout.** Feature audit of `_Placeholder.moti` shows nothing newer than mid-2023: 3D Object/USDZ (Motion 5.4.6 / FCP 10.4.9, Aug 2020), Camera+Depth of Field, Rig/Widget, Fade, Drop Zone, HDR-aware color / ColorSpaceID (Motion 5.6.4 / FCP 10.6.6, May 2023). NO 6.x features (no Magnetic Mask, Apple Intelligence, Image Playground, spatial). The 6.2 stamp is only because Mark authored it in the latest Motion.
+- **True feature floor: ~FCP 10.6.6 (2023).** Likely root cause of the 2.1 video request: the reviewer's MacBook Air runs an FCP older than 12.2, so the title loads as a red badge -> "unable to access part of the app."
+
+### Backdating plan (HOLDING until Mark confirms an older FCP to test against)
+- **Recommended (safe): set `<displayversion>5.8</displayversion>`, KEEP `<ozml version="5.14">`** -> opens in FCP 10.8+ (Jun 2024 onward, ~2yr of installs). ozml unchanged = zero format risk.
+- Max reach (FCP 10.6.6) would also need `ozml` -> `5.13`; more risk, little gain. Don't bother.
+- **Clean to apply:** the app's runtime patcher (`TemplateBuilder.patch`) only rewrites the USDZ scenenode name, `relativeURL`, and animation timing — it NEVER touches lines 3 & 5. So edit `_Placeholder.moti` once and every generated title inherits the lower stamp.
+- **Hard requirement before shipping:** TEST a generated title in a real non-12.2 FCP (e.g. 11.x) and confirm it appears in the Titles browser with NO red alert-badge. Feature analysis is necessary but not sufficient — only an older-FCP load is proof.
+- It's a binary change -> new build -> new review cycle. Does NOT unblock the current review faster than the demo video. It's the ROOT-CAUSE fix (helps the reviewer's older FCP + all customers not on 12.2). Candidate for next build, or this one if fixing the cause is preferred over sending a video.
