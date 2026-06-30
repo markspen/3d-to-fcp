@@ -163,3 +163,10 @@ Each USDZ becomes a draggable title in FCP's Titles Browser under the "3D to FCP
 - **Where the link goes (Apple wants BOTH):** (1) App Store Connect -> version -> App Review Information -> **Notes** field; (2) the rejection **message thread** on the Distribution page (this IS the "Resolution Center" — no separate tab in current ASC; same place replies were posted in prior rounds). Save the Notes field before leaving the page (silent-drop risk).
 - **Local rebuild (2026-06-30):** old `/Applications/3D to FCP.app` was a stale-NAMED leftover (inside was correct: display name "3D to Timeline", build 4). Rebuilt fresh via `DEVELOPER_DIR=/Applications/Xcode.app/... xcodebuild -scheme ThreeDtoFCP -configuration Release` (system xcode-select pointed at CommandLineTools, hence the DEVELOPER_DIR override). Installed `/Applications/3D to Timeline.app`; moved stale app to Trash. Note: local build is dev-signed (has get-task-allow) but behaviorally identical for demo purposes.
 - **Backdating (displayversion 6.2 -> 5.8) still HELD** — separate product-quality fix for customers on older FCP; does NOT help this reviewer (no FCP). Revisit for next build once an older FCP is available to test against.
+
+## Backdate SHIPPED to main (2026-06-30) — tested OK in FCP 10.8
+- `_Placeholder.moti` `displayversion` 6.2 -> **5.8** (kept `ozml 5.14`). Commit 079a116 on main.
+- **TEST PASSED:** generated a title from the backdated build, dropped into **Final Cut Pro 10.8** -> loaded with NO red alert-badge, 3D model rendered in the timeline. The FCP 10.8 floor is confirmed working.
+- All 12 unit tests still green (patcher never touches the version lines).
+- **Result:** generated titles now open in **FCP 10.8 (Jun 2024) and newer** instead of FCP 12.2-only. Broad customer compatibility restored.
+- **STILL DO NOT UPLOAD until 1.0(4) is APPROVED via the demo video.** Uploading a new build now supersedes/cancels the in-review 1.0(4) submission. Sequence: (1) wait for 1.0(4) verdict on the video; (2) once approved + live, ship this backdate as the NEXT build -> bump to **1.0(5)** at archive time (build is currently still 4 in project.yml), archive, upload, submit.
