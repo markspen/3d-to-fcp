@@ -2,7 +2,7 @@
 <!DOCTYPE ozxmlscene>
 <ozml version="5.14">
 
-<displayversion>6.2</displayversion>
+<displayversion>5.8</displayversion>
 
 <factory id="1" uuid="402246385249454b90e08b2ee1b6bf06">
 	<description>Rig</description>
