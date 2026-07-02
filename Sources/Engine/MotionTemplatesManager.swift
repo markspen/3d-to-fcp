@@ -8,33 +8,48 @@ final class MotionTemplatesManager {
 
     private let bookmarkKey = "motionTemplatesTitlesBookmark"
 
-    // Cached URL — resolvedBookmark() acquires a security-scoped resource that must
-    // not be re-acquired on every access. Acquire once, hold for the app's lifetime,
-    // release in deinit (a belt-and-suspenders — the OS releases on process exit).
-    private var cachedURL: URL?
+    // The security-scoped folder the user granted (their Movies folder, normally).
+    // resolvedBookmark() acquires the scoped resource; acquire once, hold for the
+    // app's lifetime, release in deinit (belt-and-suspenders — the OS releases on exit).
+    private var scopedRoot: URL?
 
+    // The FCP titles folder to write into, derived from the user-granted folder:
+    // ~/Movies/Motion Templates.localized/Titles.localized. Returns nil until the
+    // user grants access — the app is sandboxed with only user-selected access, so
+    // there is no silent default path (nil means "prompt with requestAccess()").
+    // The .localized intermediates are created on demand by TemplateBuilder; FCP
+    // only recognizes the ".localized" folder names.
     var titlesFolder: URL? {
-        if cachedURL == nil {
-            cachedURL = resolvedBookmark() ?? defaultTitlesURL()
+        if scopedRoot == nil {
+            scopedRoot = resolvedBookmark()
         }
-        return cachedURL
+        guard let root = scopedRoot else { return nil }
+        return titlesSubfolder(of: root)
     }
 
     deinit {
-        cachedURL?.stopAccessingSecurityScopedResource()
+        scopedRoot?.stopAccessingSecurityScopedResource()
     }
 
     /// Call at first launch if titlesFolder is inaccessible.
     /// Opens an NSOpenPanel so the user grants access to the folder.
     @MainActor
     func requestAccess(in window: NSWindow?) async -> Bool {
+        guard let movies = moviesURL() else { return false }
+
         let panel = NSOpenPanel()
-        panel.message = "3D to Timeline needs access to your Motion Templates folder to save titles."
+        panel.message = "Grant 3D to Timeline access to your Movies folder so it can install titles for Final Cut Pro. The Movies folder is the only selectable option."
         panel.prompt = "Grant Access"
         panel.canChooseFiles = false
         panel.canChooseDirectories = true
-        panel.canCreateDirectories = true
-        panel.directoryURL = defaultTitlesURL()
+        panel.canCreateDirectories = false
+        panel.allowsMultipleSelection = false
+        // Open in the home folder so "Movies" appears as a selectable item, and use a
+        // delegate to enable ONLY the Movies folder — every other item is disabled, so
+        // the user can't navigate off and accidentally grant the wrong directory.
+        panel.directoryURL = movies.deletingLastPathComponent()
+        let panelDelegate = MoviesOnlyPanelDelegate(allowed: movies)
+        panel.delegate = panelDelegate
 
         let response: NSApplication.ModalResponse
         if let window {
@@ -42,12 +57,13 @@ final class MotionTemplatesManager {
         } else {
             response = panel.runModal()
         }
+        withExtendedLifetime(panelDelegate) {}  // panel.delegate is weak — keep it alive through the modal
 
         guard response == .OK, let url = panel.url else { return false }
 
         // Release the previously held bookmark access (if any) before replacing it.
-        cachedURL?.stopAccessingSecurityScopedResource()
-        cachedURL = nil
+        scopedRoot?.stopAccessingSecurityScopedResource()
+        scopedRoot = nil
 
         saveBookmark(for: url)
         return true
@@ -55,15 +71,30 @@ final class MotionTemplatesManager {
 
     // MARK: - Private
 
-    private func defaultTitlesURL() -> URL? {
-        let movies = FileManager.default.urls(for: .moviesDirectory, in: .userDomainMask).first
-        // Try the .localized variant first (standard on macOS), then fall back to plain name
-        let localized = movies?.appendingPathComponent("Motion Templates.localized/Titles.localized")
-        let plain     = movies?.appendingPathComponent("Motion Templates/Titles")
+    /// The user's Movies folder — the open panel's starting location. The user
+    /// grants this (or, if they navigate in, an existing Motion Templates / Titles
+    /// folder); titlesSubfolder(of:) maps whatever they grant to the FCP titles path.
+    private func moviesURL() -> URL? {
+        FileManager.default.urls(for: .moviesDirectory, in: .userDomainMask).first
+    }
 
-        if let l = localized, FileManager.default.fileExists(atPath: l.path) { return l }
-        if let p = plain,     FileManager.default.fileExists(atPath: p.path) { return p }
-        return localized // return preferred path even if it doesn't exist yet; we'll create it
+    /// Maps the user-granted folder to …/Motion Templates.localized/Titles.localized.
+    /// FCP only recognizes the ".localized" folder names. The intermediates are
+    /// created later by TemplateBuilder via withIntermediateDirectories, which reuses
+    /// any that already exist (e.g. an FCP+Motion user's folder) and creates any that
+    /// are missing (e.g. an FCP-only user who has never used Motion) — without
+    /// disturbing existing sibling templates.
+    private func titlesSubfolder(of root: URL) -> URL {
+        switch root.lastPathComponent {
+        case "Titles.localized":
+            return root
+        case "Motion Templates.localized":
+            return root.appendingPathComponent("Titles.localized")
+        default:
+            return root
+                .appendingPathComponent("Motion Templates.localized")
+                .appendingPathComponent("Titles.localized")
+        }
     }
 
     private func saveBookmark(for url: URL) {
@@ -88,5 +119,19 @@ final class MotionTemplatesManager {
         if stale { saveBookmark(for: url) }
         _ = url.startAccessingSecurityScopedResource()
         return url
+    }
+}
+
+/// Restricts an NSOpenPanel so only the user's Movies folder can be selected/granted.
+/// Every other item is disabled, so the user can't accidentally grant a different
+/// directory. Still the standard open dialog (sandbox requires it for the grant) —
+/// just locked to a single valid choice.
+private final class MoviesOnlyPanelDelegate: NSObject, NSOpenSavePanelDelegate {
+    private let allowedPath: String
+    init(allowed: URL) {
+        allowedPath = allowed.resolvingSymlinksInPath().standardizedFileURL.path
+    }
+    func panel(_ sender: Any, shouldEnable url: URL) -> Bool {
+        url.resolvingSymlinksInPath().standardizedFileURL.path == allowedPath
     }
 }
