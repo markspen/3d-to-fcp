@@ -182,3 +182,10 @@ Each USDZ becomes a draggable title in FCP's Titles Browser under the "3D to FCP
 - **Testing reset:** to force the first-run grant dialog again, quit the app then `defaults delete com.markspencer.ThreeDtoFCP motionTemplatesTitlesBookmark` (redirects to the sandbox container correctly).
 - **Mark's machine only (NOT an app change):** FCP 12.3 was installed by SpliceKit at `~/Applications/SpliceKit/Final Cut Pro Creator Studio.app` (bundle id `com.apple.FinalCutApp`, NOT com.apple.FinalCut). Moved it to `/Applications/Final Cut Pro Creator Studio.app` (real move, re-registered via lsregister) so the app's hardcoded `/Applications` path check + App Store updates work. App code unchanged per Mark's instruction.
 - **NEXT (upload sequence):** Developer Reject 1.0(4) in App Store Connect -> archive 1.0(5) in Xcode (run `xcodegen generate` first) -> upload -> attach -> resubmit. The 2.1 demo-video link persists on the version. This is the binary Apple asked for.
+
+## 1.0(5) RESUBMITTED to App Review (2026-07-01)
+- Archived 1.0(5) (verified via codesign on the .xcarchive: build 5, display name "3D to Timeline", entitlements = app-sandbox + bookmarks.app-scope + user-selected.read-write, **NO movies entitlement**, backdate displayversion 5.8 intact). Uploaded via Xcode Organizer -> Distribute App -> App Store Connect.
+- In ASC: swapped attached build 1.0(4) -> 1.0(5), replied in Resolution Center confirming the entitlement removal + user-selected/bookmark approach, **Save**d, then Resubmit to App Review enabled and clicked. Now Waiting for Review.
+- **ASC gotcha (again):** after swapping the build, "Resubmit to App Review" stays GREYED until you click **Save** to register the change. Save first, then it enables.
+- Demo-video link (Guideline 2.1) persists on the version -> 2.1 stays satisfied; 1.0(5) addresses 2.4.5(i) (entitlement).
+- Status: this build carries BOTH the 2.4.5(i) entitlement fix AND the FCP 10.8 template backdate. Awaiting Apple verdict. If APPROVED -> confirm Pricing & Availability release setting, verify live. If rejected -> read cited guideline.
