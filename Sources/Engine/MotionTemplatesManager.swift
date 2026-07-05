@@ -38,7 +38,7 @@ final class MotionTemplatesManager {
         guard let movies = moviesURL() else { return false }
 
         let panel = NSOpenPanel()
-        panel.message = "Select your Movies folder and click Grant Access. Final Cut Pro finds titles only in the Motion Templates folder inside Movies."
+        panel.message = "Select your Movies folder and click Grant Access."
         panel.prompt = "Grant Access"
         panel.canChooseFiles = false
         panel.canChooseDirectories = true
