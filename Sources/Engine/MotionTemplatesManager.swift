@@ -38,18 +38,17 @@ final class MotionTemplatesManager {
         guard let movies = moviesURL() else { return false }
 
         let panel = NSOpenPanel()
-        panel.message = "Grant 3D to Timeline access to your Movies folder so it can install titles for Final Cut Pro. The Movies folder is the only selectable option."
+        panel.message = "Select your Movies folder and click Grant Access. Final Cut Pro finds titles only in the Motion Templates folder inside Movies."
         panel.prompt = "Grant Access"
         panel.canChooseFiles = false
         panel.canChooseDirectories = true
-        panel.canCreateDirectories = false
+        panel.canCreateDirectories = true
         panel.allowsMultipleSelection = false
-        // Open in the home folder so "Movies" appears as a selectable item, and use a
-        // delegate to enable ONLY the Movies folder — every other item is disabled, so
-        // the user can't navigate off and accidentally grant the wrong directory.
-        panel.directoryURL = movies.deletingLastPathComponent()
-        let panelDelegate = MoviesOnlyPanelDelegate(allowed: movies)
-        panel.delegate = panelDelegate
+        // Open inside Movies so clicking Grant Access with no navigation grants the
+        // Movies folder (the recommended location). The user is free to choose any
+        // folder (App Review requires a genuine choice); titlesSubfolder(of:) maps
+        // whatever they grant to the Motion Templates/Titles path inside it.
+        panel.directoryURL = movies
 
         let response: NSApplication.ModalResponse
         if let window {
@@ -57,7 +56,6 @@ final class MotionTemplatesManager {
         } else {
             response = panel.runModal()
         }
-        withExtendedLifetime(panelDelegate) {}  // panel.delegate is weak — keep it alive through the modal
 
         guard response == .OK, let url = panel.url else { return false }
 
@@ -119,19 +117,5 @@ final class MotionTemplatesManager {
         if stale { saveBookmark(for: url) }
         _ = url.startAccessingSecurityScopedResource()
         return url
-    }
-}
-
-/// Restricts an NSOpenPanel so only the user's Movies folder can be selected/granted.
-/// Every other item is disabled, so the user can't accidentally grant a different
-/// directory. Still the standard open dialog (sandbox requires it for the grant) —
-/// just locked to a single valid choice.
-private final class MoviesOnlyPanelDelegate: NSObject, NSOpenSavePanelDelegate {
-    private let allowedPath: String
-    init(allowed: URL) {
-        allowedPath = allowed.resolvingSymlinksInPath().standardizedFileURL.path
-    }
-    func panel(_ sender: Any, shouldEnable url: URL) -> Bool {
-        url.resolvingSymlinksInPath().standardizedFileURL.path == allowedPath
     }
 }
