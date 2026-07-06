@@ -203,3 +203,10 @@ Each USDZ becomes a draggable title in FCP's Titles Browser under the "3D to FCP
 - **Fix in 1.0(6):** removed `MoviesOnlyPanelDelegate` (free choice, canCreateDirectories back on); panel now opens INSIDE Movies so a bare Grant Access click = grants Movies with zero navigation; message: "Select your Movies folder and click Grant Access. Final Cut Pro finds titles only in the Motion Templates folder inside Movies." `titlesSubfolder()` unchanged — any granted folder gets the `.localized` tree created inside it (works everywhere; FCP just only *sees* the Movies one).
 - Build 5 -> 6. 12 tests pass. Verified in Release build: entitlements still exactly app-sandbox + bookmarks + user-selected.read-write; backdate 5.8 intact. Installed locally; saved grant cleared for smoke test.
 - **NEXT:** Mark smoke-tests the free-choice dialog -> archive 1.0(6) in Xcode -> upload -> swap 1.0(5)->1.0(6) on the version -> reply in thread -> Save -> Resubmit. (Remember: Resubmit stays greyed until Save.)
+
+## 1.0(6) RESUBMITTED (2026-07-05)
+- Panel message shortened per Mark: "Select your Movies folder and click Grant Access." (dropped the Motion Templates sentence — confusing for users who don't have that folder yet). Commit ae34500.
+- Archive verified before upload (build 6, entitlements = sandbox+bookmarks+user-selected.read-write, NO movies entitlement, MoviesOnlyPanelDelegate absent from binary via strings, backdate 5.8 intact).
+- Uploaded -> swapped 1.0(5)->1.0(6) -> replied in thread (free choice, opens at Movies, recommendation not restriction, app creates structure in whatever is granted) -> Save -> Resubmit. **Waiting for Review.**
+- NOTE (not a bug): the dotted drop zone is drag-and-drop ONLY; the file picker is the "Add Files…" button below it. Mark considered making the zone clickable, decided against.
+- If rejected AGAIN on 2.4.5(i): binary is provably minimal (3 entitlements, all exercised) and the dialog is now a genuine free choice — escalate via App Review Appointment (Meet with Apple, Tue/Thu) when Mark is back from travel (out the week of Jul 6).
